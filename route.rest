@@ -1,0 +1,47 @@
+GET http://172.18.0.3:3000/sensors
+
+###
+GET http://localhost:3000/sensors/5d8e353b899b0d5b8cc013c6
+
+###
+POST http://172.23.0.3:3000/sensors
+Content-Type: application/json
+
+{
+    "name": "Temp Sensor",
+    "temperature": 89,
+    "light":30
+}
+
+###
+
+DELETE http://172.18.0.3:3000/sensors/5dbc93b4c1487e002a6fe589
+
+###
+
+DELETE http://172.18.0.3:3000/sensors/week/clean
+
+
+###
+
+PATCH http://172.23.0.3:3000/sensors/5d94bfdcbc3a0b001fd9968b
+Content-Type: application/json
+
+{
+    "temperature": 71
+}
+
+####
+GET http://172.18.0.3:3000/sequences
+
+###
+POST http://172.18.0.3:3000/sequences
+Content-Type: application/json
+
+{
+    "seq_json": "Temp Sensor"
+}
+
+###
+
+DELETE http://172.18.0.3:3000/detections/5dbc8e2ca2a7e3001f4e84ee

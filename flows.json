@@ -1,0 +1,5326 @@
+[
+    {
+        "id": "ea93235.8080ae",
+        "type": "tab",
+        "label": "Data Retrieving Events",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fdd4af97.4e40a8",
+        "type": "tab",
+        "label": "Data Retrieving Sensors",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cd488e57.ec56c",
+        "type": "tab",
+        "label": "Data Display",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a65b1de2.937398",
+        "type": "tab",
+        "label": "Calibration",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "602e9edf.820b58",
+        "type": "tab",
+        "label": "Android APP",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "198d5d1.285ed23",
+        "type": "tab",
+        "label": "Control Relay",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "14bbac1.56cf454",
+        "type": "mongodb2",
+        "z": "",
+        "uri": "mongodb://193.136.205.56:27017/euroage",
+        "name": "Node_red",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "61a5a0a8.a111c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Position 1",
+        "tab": "67b3a055.a552f8",
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "4c7d605a.bd1818",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "aac5bc8b.9fef9",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Relation",
+        "icon": "",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "aeebcd5b.a1f85",
+        "type": "ui_link",
+        "name": "Link 2",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "67b3a055.a552f8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Sensor Values",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fd3195d7.6f737",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sensors Con.",
+        "tab": "aac5bc8b.9fef9",
+        "disp": true,
+        "width": "20",
+        "collapse": false
+    },
+    {
+        "id": "af2ae513.46dea",
+        "type": "deconz-server",
+        "z": "",
+        "name": "Phoscon-GW",
+        "ip": "10.231.234.184",
+        "port": "8080",
+        "apikey": "39CB53C422",
+        "ws_port": "443",
+        "secure": false
+    },
+    {
+        "id": "83499d79.7879b",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "999ed32a.9ff2e",
+        "type": "ui_group",
+        "z": "",
+        "name": "Position 2",
+        "tab": "67b3a055.a552f8",
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "876133d0.ab094",
+        "type": "ui_group",
+        "z": "",
+        "name": "Motion on Lab",
+        "tab": "67b3a055.a552f8",
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "1605b768.f885a1",
+        "type": "dropbox-config",
+        "z": "",
+        "name": "EuroAge"
+    },
+    {
+        "id": "767108a1.4867",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Control",
+        "icon": "",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e2484a8d.86ce1",
+        "type": "ui_group",
+        "z": "",
+        "name": "Control Room",
+        "tab": "767108a1.4867",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f66e933b.aa09",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:03:6d:60:c5-01-0406",
+        "device_name": "Presence 11 : ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 151,
+        "y": 187,
+        "wires": [
+            [
+                "4f7b7a8.53ff204"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c46ad09f.cc0498",
+        "type": "deconz-output",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 1167,
+        "y": 896,
+        "wires": []
+    },
+    {
+        "id": "c6cf5884.18a84",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:02:e3:05:41-01-0012",
+        "device_name": "lumi.remote.b286acn01 15 : ZHASwitch",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 178,
+        "y": 770,
+        "wires": [
+            [
+                "2fde7589.be2ac2",
+                "b62783b6.68d4d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4f7b7a8.53ff204",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 0,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 498,
+        "y": 182,
+        "wires": [
+            [
+                "80c8283c.419668"
+            ]
+        ]
+    },
+    {
+        "id": "e9454526.0914d8",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 906,
+        "y": 181,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "c6c8683b.9b52a",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:35:7e:5a-01-0006",
+        "device_name": "TRÅDFRI Motion sensor : ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 189,
+        "y": 234,
+        "wires": [
+            [
+                "98c6210a.9432b8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ad2ea1ac.64a82",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:41:37:3e-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 190,
+        "y": 281,
+        "wires": [
+            [
+                "4fab8809.be7f1"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9dee591b.0e614",
+        "type": "deconz-output",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:ba:78:23-01",
+        "device_name": "Light 3 : On/Off plug-in unit",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "",
+        "x": 1177,
+        "y": 932,
+        "wires": []
+    },
+    {
+        "id": "98c6210a.9432b8",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 1,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 227,
+        "wires": [
+            [
+                "ffe73ff5.23606"
+            ]
+        ]
+    },
+    {
+        "id": "66ac3496.1ba1b4",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 914,
+        "y": 273,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "4fab8809.be7f1",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 2,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 502,
+        "y": 274,
+        "wires": [
+            [
+                "cbd27128.515bf"
+            ]
+        ]
+    },
+    {
+        "id": "1734d65a.46edaa",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 914,
+        "y": 320,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "2fde7589.be2ac2",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "Post Switch",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Switch Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 7,\n    switch_code:aux.buttonevent\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 539,
+        "y": 764,
+        "wires": [
+            [
+                "fbbd2235.b36468"
+            ]
+        ]
+    },
+    {
+        "id": "2563b12f.164ce6",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 969,
+        "y": 762,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b62783b6.68d4d8",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "payload.buttonevent",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1002",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2002",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3002",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 456,
+        "y": 948,
+        "wires": [
+            [
+                "f90a7e42.72437"
+            ],
+            [
+                "9dee591b.0e614",
+                "1343bc66.5c4674"
+            ],
+            [
+                "4923e8ec.c4e318"
+            ]
+        ]
+    },
+    {
+        "id": "f90a7e42.72437",
+        "type": "deconz-get",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "state": "0",
+        "x": 722,
+        "y": 898,
+        "wires": [
+            [
+                "aab4e32.36ddc2"
+            ]
+        ]
+    },
+    {
+        "id": "aab4e32.36ddc2",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "Negate",
+        "func": "msg.payload = !msg.payload.on;\nglobal.set(\"switch1\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 936,
+        "y": 895,
+        "wires": [
+            [
+                "c46ad09f.cc0498"
+            ]
+        ]
+    },
+    {
+        "id": "326b43e6.724024",
+        "type": "mqtt in",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "topic": "esp/water",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "83499d79.7879b",
+        "x": 120,
+        "y": 1260,
+        "wires": [
+            [
+                "e98f390e.afcaf"
+            ]
+        ]
+    },
+    {
+        "id": "e98f390e.afcaf",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nif(msg.payload === '1')\n{\n    msg.payload = \n    {\n        name: \"Water Sensor\",\n        device_position: 8,\n        water_det:true\n    }\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 362,
+        "y": 1261,
+        "wires": [
+            [
+                "122c65b3.1292f2"
+            ]
+        ]
+    },
+    {
+        "id": "f614f3b5.221718",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 802,
+        "y": 1259,
+        "wires": [
+            [
+                "3c061caa.48eff4"
+            ]
+        ]
+    },
+    {
+        "id": "3c061caa.48eff4",
+        "type": "debug",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1089,
+        "y": 1256,
+        "wires": []
+    },
+    {
+        "id": "a2721be6.c9c3",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "https://maker.ifttt.com/trigger/{{event}}/with/key/_bj9zEbJx1pOVkmKBdglY",
+        "tls": "",
+        "proxy": "",
+        "authType": "",
+        "x": 582,
+        "y": 132,
+        "wires": [
+            [
+                "407511d2.144008"
+            ]
+        ]
+    },
+    {
+        "id": "a5031621.c7c638",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 155,
+        "y": 244,
+        "wires": [
+            [
+                "1206d006.bc7278"
+            ]
+        ]
+    },
+    {
+        "id": "1206d006.bc7278",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Request Param",
+        "func": "msg.event = \"testrequest\";\nmsg.payload = {\"value1\": \"testValue\", \"value2\": \"testValue2\"};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 352,
+        "y": 132,
+        "wires": [
+            [
+                "a2721be6.c9c3"
+            ]
+        ]
+    },
+    {
+        "id": "407511d2.144008",
+        "type": "debug",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 682,
+        "y": 292,
+        "wires": []
+    },
+    {
+        "id": "73068fd4.50e228",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 107,
+        "y": 438,
+        "wires": [
+            [
+                "2231cafa.5edad6",
+                "d8552050.bfa8e8",
+                "cb38e08.ec672a",
+                "d4250ea5.aaaec",
+                "6c3133de.ed6e2c"
+            ]
+        ]
+    },
+    {
+        "id": "2231cafa.5edad6",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors/name/Multi Sensor/position/9",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 275,
+        "y": 436,
+        "wires": [
+            [
+                "c74468d2.a49b38",
+                "af929ad3.8e38d",
+                "b11f654c.426838",
+                "67d748bb.2ccef8"
+            ]
+        ]
+    },
+    {
+        "id": "c74468d2.a49b38",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Temperature",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = [];\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"Multi Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].temperature }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 960,
+        "y": 380,
+        "wires": [
+            [
+                "19bea72d.938991"
+            ]
+        ]
+    },
+    {
+        "id": "19bea72d.938991",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "61a5a0a8.a111c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1203,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af929ad3.8e38d",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Humidity",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = []\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"Multi Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].humidity }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 951,
+        "y": 432,
+        "wires": [
+            [
+                "fb754d5b.3b3d3"
+            ]
+        ]
+    },
+    {
+        "id": "fb754d5b.3b3d3",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "61a5a0a8.a111c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1194,
+        "y": 432,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b11f654c.426838",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Light",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = []\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"Multi Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].lux }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 941,
+        "y": 481,
+        "wires": [
+            [
+                "738590ee.5829f"
+            ]
+        ]
+    },
+    {
+        "id": "738590ee.5829f",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "61a5a0a8.a111c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Light",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1184,
+        "y": 481,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9c2a2d3.441f98",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Temperature",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = [];\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"Multi Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].temperature }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 966,
+        "y": 584,
+        "wires": [
+            [
+                "fb2b2900.9d96b"
+            ]
+        ]
+    },
+    {
+        "id": "fb2b2900.9d96b",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "999ed32a.9ff2e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1209,
+        "y": 584,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b10782b.ab1d78",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Humidity",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = []\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"Multi Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].humidity }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 957,
+        "y": 636,
+        "wires": [
+            [
+                "1f2c67dc.ce58f"
+            ]
+        ]
+    },
+    {
+        "id": "1f2c67dc.ce58f",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "999ed32a.9ff2e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1200,
+        "y": 636,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a921f5d2.8268f8",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Light",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = []\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"Multi Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].lux }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 947,
+        "y": 685,
+        "wires": [
+            [
+                "79254725.b2ec1"
+            ]
+        ]
+    },
+    {
+        "id": "79254725.b2ec1",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "999ed32a.9ff2e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Light",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1190,
+        "y": 685,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8552050.bfa8e8",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors/name/Multi Sensor/position/10",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 289,
+        "y": 642,
+        "wires": [
+            [
+                "f9c2a2d3.441f98",
+                "9b10782b.ab1d78",
+                "a921f5d2.8268f8",
+                "c85dd105.f50dc"
+            ]
+        ]
+    },
+    {
+        "id": "cb38e08.ec672a",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections/name/Motion Sensor/position/0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 271,
+        "y": 1003,
+        "wires": [
+            [
+                "cde601b.afe67"
+            ]
+        ]
+    },
+    {
+        "id": "cde601b.afe67",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Motion",
+        "func": "p = msg.payload;\n//node.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = {};\ntime_aux = Math.floor(p[0].timestamp/(24*60*60));\ncount = 0;\nt = 0;\nvar time_up = new Date();\nmsg.payload = {};\nfor(var i = 0; i < p.length; i++)\n{\n    if(Math.floor(p[i].timestamp/(24*60*60)) == time_aux)\n    {\n        count++\n    }\n    else\n    {\n        if(t === 0)\n        {\n            var_data.series = [\"\"];\n            var_data.data = [[count]];\n            time_up = new Date(time_aux*(24*60*60)*1000);\n            var_data.labels = [parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear())];\n            time_aux = Math.floor(p[i].timestamp/(24*60*60))\n            t++;\n            count = 1\n        }\n        else\n        {\n            var_data.data[0].push(count);\n            time_up = new Date(time_aux*(24*60*60)*1000);\n            var_data.labels.push(parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear()));\n            time_aux = Math.floor(p[i].timestamp/(24*60*60))\n            t++\n            count = 1\n        }\n    }\n}\nif(t === 0)\n{\n    var_data.series = [\"\"];\n    var_data.data = [[count]];\n    time_up = new Date(time_aux*(24*60*60)*1000);\n    var_data.labels = [parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear())];\n}\nelse\n{\n    var_data.data[0].push(count);\n    time_up = new Date(time_aux*(24*60*60)*1000);\n    var_data.labels.push(parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear()));\n}\nreturn {payload:[var_data]};\n\n\nfunction parse(str) {\n    var args = [].slice.call(arguments, 1),\n        i = 0;\n\n    return str.replace(/%s/g, () => args[i++]);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 473,
+        "y": 1003,
+        "wires": [
+            [
+                "f5887170.a6348"
+            ]
+        ]
+    },
+    {
+        "id": "f5887170.a6348",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "876133d0.ab094",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Position 1",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "D/M/Y",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 775,
+        "y": 1003,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4250ea5.aaaec",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections/name/Motion Sensor/position/1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 270,
+        "y": 1062,
+        "wires": [
+            [
+                "e3508865.f3ed6"
+            ]
+        ]
+    },
+    {
+        "id": "705ce038.7f9c9",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "876133d0.ab094",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Position 2",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "D/M/Y",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 778,
+        "y": 1063,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67d748bb.2ccef8",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Current Values",
+        "func": "p = msg.payload;\nnode.log(typeof p);\nmsg.payload.temperature = [p[msg.payload.length-1].temperature];\nmsg.payload.humidity = [p[msg.payload.length-1].humidity];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 352,
+        "y": 538,
+        "wires": [
+            [
+                "d4a518f3.dd8ad",
+                "1693df69.f47ce9"
+            ]
+        ]
+    },
+    {
+        "id": "1a8a4317.069665",
+        "type": "ui_gauge",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "61a5a0a8.a111c8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 744,
+        "y": 512,
+        "wires": []
+    },
+    {
+        "id": "54e74710.5a57f",
+        "type": "ui_gauge",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "61a5a0a8.a111c8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 735,
+        "y": 559,
+        "wires": []
+    },
+    {
+        "id": "d4a518f3.dd8ad",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Split Temp",
+        "func": "var p = msg.payload.temperature;\nmsg.payload = p;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 557,
+        "y": 503,
+        "wires": [
+            [
+                "1a8a4317.069665"
+            ]
+        ]
+    },
+    {
+        "id": "1693df69.f47ce9",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Split Hum",
+        "func": "var p = msg.payload.humidity;\nmsg.payload = p;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 549,
+        "y": 554,
+        "wires": [
+            [
+                "54e74710.5a57f"
+            ]
+        ]
+    },
+    {
+        "id": "c85dd105.f50dc",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Current Values",
+        "func": "p = msg.payload;\nnode.log(typeof p);\nmsg.payload.temperature = [p[msg.payload.length-1].temperature];\nmsg.payload.humidity = [p[msg.payload.length-1].humidity];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 816,
+        "wires": [
+            [
+                "7fa0f415.f8cfe4",
+                "49a39d9.a532a64"
+            ]
+        ]
+    },
+    {
+        "id": "8ae55378.2bfac",
+        "type": "ui_gauge",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "999ed32a.9ff2e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 742,
+        "y": 790,
+        "wires": []
+    },
+    {
+        "id": "3f463c77.bc4d44",
+        "type": "ui_gauge",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "999ed32a.9ff2e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 733,
+        "y": 837,
+        "wires": []
+    },
+    {
+        "id": "7fa0f415.f8cfe4",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Split Temp",
+        "func": "var p = msg.payload.temperature;\nmsg.payload = p;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 555,
+        "y": 781,
+        "wires": [
+            [
+                "8ae55378.2bfac"
+            ]
+        ]
+    },
+    {
+        "id": "49a39d9.a532a64",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Split Hum",
+        "func": "var p = msg.payload.humidity;\nmsg.payload = p;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 547,
+        "y": 832,
+        "wires": [
+            [
+                "3f463c77.bc4d44"
+            ]
+        ]
+    },
+    {
+        "id": "6c3133de.ed6e2c",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors/name/CO2 Sensor/position/11",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 268,
+        "y": 1117,
+        "wires": [
+            [
+                "93f702a8.8538c"
+            ]
+        ]
+    },
+    {
+        "id": "93f702a8.8538c",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "CO2",
+        "func": "p = msg.payload;\nnode.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = [];\nfor(var i = 0; i < msg.payload.length; i++)\n{\n    if(p[i].name == \"CO2 Sensor\")\n    {\n        var_data[i] = { \"x\": p[i].timestamp*1000, \"y\": p[i].co2 }\n    }\n}\nmsg.payload =\n[{\n\"series\": [\"\"],\n\"data\": [\n    var_data\n],\n\"labels\": [\"\"]\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 484,
+        "y": 1114,
+        "wires": [
+            [
+                "f79fe518.8859d"
+            ]
+        ]
+    },
+    {
+        "id": "f79fe518.8859d",
+        "type": "ui_chart",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "61a5a0a8.a111c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Co2",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "385bbe10.cde5e2",
+        "type": "ui_template",
+        "z": "cd488e57.ec56c",
+        "d": true,
+        "group": "fd3195d7.6f737",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>jQuery UI Draggable - Snap to element or grid</title>\n  <link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css\">\n  <style>\n  .draggable { width: 45px; height: 40px; padding: 5px; float: left; margin: 0 10px 10px 0; font-size: .9em; }\n  .ui-widget-header p, .ui-widget-content p { margin: 0; }\n  </style>\n  <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>\n  <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>\n  <script>\n  var data;\n  (function(scope) {\n        scope.$watch('msg.payload', function(data) {\n            console.dir(data);\n        });\n    })(scope);\n    $( function() {\n    $( \"#draggable\" ).draggable({ snap: true }, { grid: [ 20,20 ] },{ containment: \"parent\" });\n    $( \"#draggable2\" ).draggable({ snap: true }, { grid: [ 20,20 ] },{ containment: \"parent\" });\n    $( \"#draggable3\" ).draggable({ snap: true }, { grid: [ 20,20 ] },{ containment: \"parent\" });\n    $( \"#draggable4\" ).draggable({ snap: true }, { grid: [ 20,20 ] },{ containment: \"parent\" });\n    $( \"#draggable5\" ).draggable({ snap: true }, { grid: [ 20,20 ] },{ containment: \"parent\" });\n  } );\n  </script>\n  <script>\n      $(function(){\n          var i = 0;\n          for(i = 0; i < 5; i++)\n          {\n             $(\"<div/>\", {\n               \"class\": \"draggable ui-widget-content\",\n                text: \"\",\n              }).appendTo(\"body\");\n             $( \".draggable\" ).draggable({ snap: true }, { grid: [ 20,20 ] },{ containment: \"parent\" });\n          }\n  });\n  </script>\n</head>\n<body>\n \n<div ng-bind-html=\"msg.payload\"></div>\n\n\n<div id=\"draggable\" class=\"draggable ui-widget-content\">\n  <p>Door 1</p>\n</div>\n \n<div id=\"draggable2\" class=\"draggable ui-widget-content\">\n  <p>Door 2</p>\n</div>\n \n<div id=\"draggable3\" class=\"draggable ui-widget-content\">\n  <p>Door 3</p>\n</div>\n \n<div id=\"draggable4\" class=\"draggable ui-widget-content\">\n  <p></p>\n</div>\n \n<div id=\"draggable5\" class=\"draggable ui-widget-content\">\n  <p></p>\n</div>\n \n<div style=\"padding: 20px; margin-top: 75px;\">\n  [nº Doors, nº empty blocks]\n  <div style=\"padding-bottom: 20px;\">\n    <b>my:</b>\n    <select id=\"doors\">\n      <option value=\"0\">0</option>\n      <option value=\"1\">1</option>\n      <option value=\"2\">2</option>\n      <option value=\"3\">3</option>\n      <option value=\"4\">4</option>\n      <option value=\"5\">5</option>\n      <option value=\"6\">6</option>\n      <option value=\"7\">7</option>\n      <option value=\"8\">8</option>\n      <option value=\"9\">9</option>\n    </select>\n    <select id=\"empty\">\n      <option value=\"0\">0</option>\n      <option value=\"1\">1</option>\n      <option value=\"2\">2</option>\n      <option value=\"3\">3</option>\n      <option value=\"4\">4</option>\n      <option value=\"5\">5</option>\n      <option value=\"6\">6</option>\n      <option value=\"7\">7</option>\n      <option value=\"8\">8</option>\n      <option value=\"9\">9</option>\n    </select>\n  </div>\n</div>\n \n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 558,
+        "y": 1267,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ef185e7.ee9bba",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 127,
+        "y": 1261,
+        "wires": [
+            [
+                "fdd77442.7ac378"
+            ]
+        ]
+    },
+    {
+        "id": "fdd77442.7ac378",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "func": "msg.payload = [2,3];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 342,
+        "y": 1264,
+        "wires": [
+            [
+                "385bbe10.cde5e2"
+            ]
+        ]
+    },
+    {
+        "id": "4923e8ec.c4e318",
+        "type": "deconz-get",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:04:11:a7:2a-0b",
+        "device_name": "Light 1 : Dimmable light",
+        "state": "0",
+        "x": 720,
+        "y": 853,
+        "wires": [
+            [
+                "84e23e4a.e2d598"
+            ]
+        ]
+    },
+    {
+        "id": "84e23e4a.e2d598",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "Negate",
+        "func": "msg.payload = !msg.payload.on;\nglobal.set(\"switch1\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 935,
+        "y": 852,
+        "wires": [
+            [
+                "27a5459.580e93a"
+            ]
+        ]
+    },
+    {
+        "id": "27a5459.580e93a",
+        "type": "deconz-output",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:04:11:a7:2a-0b",
+        "device_name": "Light 1 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 1164,
+        "y": 850,
+        "wires": []
+    },
+    {
+        "id": "a282b4c8.5438",
+        "type": "delay",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 820,
+        "y": 987,
+        "wires": [
+            [
+                "9dee591b.0e614"
+            ]
+        ]
+    },
+    {
+        "id": "1343bc66.5c4674",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "Negate",
+        "func": "msg.payload = !msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 997,
+        "wires": [
+            [
+                "a282b4c8.5438"
+            ]
+        ]
+    },
+    {
+        "id": "3d4bf667.d12182",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = global.get(\"switch1\");\nif(aux === false)\n{\n    if(msg.payload.presence === true)\n    {\n        msg.payload = true;\n    }\n    else\n    {\n        msg.payload = false;\n    }\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 593,
+        "y": 645,
+        "wires": [
+            [
+                "19b49fc2.840da8",
+                "b47977c8.3319e8"
+            ]
+        ]
+    },
+    {
+        "id": "19b49fc2.840da8",
+        "type": "deconz-output",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 1095,
+        "y": 646,
+        "wires": []
+    },
+    {
+        "id": "b47977c8.3319e8",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "if(msg.payload === true)\n{\n    msg.payload = 255;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 772,
+        "y": 692,
+        "wires": [
+            [
+                "422fa7c3.1bf5d8"
+            ]
+        ]
+    },
+    {
+        "id": "422fa7c3.1bf5d8",
+        "type": "deconz-output",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "command": "bri",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 1028,
+        "y": 687,
+        "wires": []
+    },
+    {
+        "id": "8c2e26c1.8bbc88",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "Event Data",
+        "info": "",
+        "x": 101,
+        "y": 53,
+        "wires": []
+    },
+    {
+        "id": "b6b0709b.0e97a8",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Check Lux",
+        "func": "var data = msg.payload;\n\nif(data.lux > 0)\n{\n    msg.payload = 1;\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 412,
+        "wires": [
+            [
+                "c6e2d36e.658be8"
+            ]
+        ]
+    },
+    {
+        "id": "50bc2d13.1ea2a4",
+        "type": "comment",
+        "z": "a65b1de2.937398",
+        "name": "Calibration (in Dev)",
+        "info": "",
+        "x": 128,
+        "y": 31,
+        "wires": []
+    },
+    {
+        "id": "c355215e.399e48",
+        "type": "deconz-output",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 706,
+        "y": 234,
+        "wires": []
+    },
+    {
+        "id": "e5e2e105.711688",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "func": "if(msg.payload === true)\n{\n    msg.payload = 255;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 461,
+        "y": 279,
+        "wires": [
+            [
+                "73db6080.be774"
+            ]
+        ]
+    },
+    {
+        "id": "73db6080.be774",
+        "type": "deconz-output",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "command": "bri",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 707,
+        "y": 278,
+        "wires": []
+    },
+    {
+        "id": "14fb1074.0ec6a8",
+        "type": "inject",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 104,
+        "y": 238,
+        "wires": [
+            [
+                "c355215e.399e48",
+                "e5e2e105.711688"
+            ]
+        ]
+    },
+    {
+        "id": "4c8d7cbf.aa9c74",
+        "type": "deconz-output",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:04:11:a7:2a-0b",
+        "device_name": "Light 5 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 704,
+        "y": 95,
+        "wires": []
+    },
+    {
+        "id": "d4d0d6ef.d8a0b8",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "func": "if(msg.payload === true)\n{\n    msg.payload = 255;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 459,
+        "y": 140,
+        "wires": [
+            [
+                "e69b0cce.0a9c7"
+            ]
+        ]
+    },
+    {
+        "id": "e69b0cce.0a9c7",
+        "type": "deconz-output",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:04:11:a7:2a-0b",
+        "device_name": "Light 5 : Dimmable light",
+        "command": "bri",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 705,
+        "y": 139,
+        "wires": []
+    },
+    {
+        "id": "11c01a9a.00d67d",
+        "type": "deconz-input",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:2b:f5-01-0400",
+        "device_name": "Multi Sensor: ZHALightLevel",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 140,
+        "y": 452,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "22381f95.15648",
+        "type": "deconz-input",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:30:64-01-0400",
+        "device_name": "Multi Sensor : ZHALightLevel",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 136,
+        "y": 410,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c6e2d36e.658be8",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Negate",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 190,
+        "y": 325,
+        "wires": [
+            [
+                "c355215e.399e48",
+                "e5e2e105.711688",
+                "4c8d7cbf.aa9c74",
+                "d4d0d6ef.d8a0b8"
+            ]
+        ]
+    },
+    {
+        "id": "8e3c8ef8.532e78",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Check Lux",
+        "func": "var data = msg.payload;\n\nif(data.lux > 0)\n{\n    msg.payload = 2;\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 504,
+        "y": 447,
+        "wires": [
+            [
+                "c6e2d36e.658be8"
+            ]
+        ]
+    },
+    {
+        "id": "7e0b1f88.06d7a8",
+        "type": "deconz-input",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:03:6d:60:c5-01-0406",
+        "device_name": "Presence 11 : ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 153,
+        "y": 623,
+        "wires": [
+            [
+                "c9192a44.c72b88"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ba0df85d.c14d78",
+        "type": "deconz-input",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:35:7e:5a-01-0006",
+        "device_name": "TRÅDFRI Motion sensor : ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 189,
+        "y": 688,
+        "wires": [
+            [
+                "a1591a95.b58118"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fe63cdc1.fcdfe",
+        "type": "deconz-input",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:41:37:3e-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 192,
+        "y": 745,
+        "wires": [
+            [
+                "351bea1e.3782c6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c9192a44.c72b88",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "func": "var aux = msg.payload;\nif(aux.presence === true)\n{\n    msg.payload = global.get(\"MotionSensorCounter\");\n    global.set(\"MotionSensorCounter\", msg.payload +1);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 441,
+        "y": 616,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9138ab24.32b79",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Put counter",
+        "func": "global.set(\"MotionSensorCounter\", 0);\nmsg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 278,
+        "y": 547,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5273d2a8.9cd714",
+        "type": "inject",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 108,
+        "y": 544,
+        "wires": [
+            [
+                "9138ab24.32b79"
+            ]
+        ]
+    },
+    {
+        "id": "a1591a95.b58118",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "func": "var aux = msg.payload;\nif(aux.presence === true)\n{\n    msg.payload = global.get(\"MotionSensorCounter\");\n    global.set(\"MotionSensorCounter\", msg.payload +1);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 498,
+        "y": 681,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "351bea1e.3782c6",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "func": "var aux = msg.payload;\nif(aux.presence === true)\n{\n    msg.payload = global.get(\"MotionSensorCounter\");\n    global.set(\"MotionSensorCounter\", msg.payload +1);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 481,
+        "y": 739,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "674ab77c.ade548",
+        "type": "complete",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "scope": [
+            "b6b0709b.0e97a8"
+        ],
+        "uncaught": false,
+        "x": 105,
+        "y": 95,
+        "wires": [
+            [
+                "3d25ff5e.240b5"
+            ]
+        ]
+    },
+    {
+        "id": "f9c33524.a45ab",
+        "type": "join",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "20",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 870,
+        "y": 1520,
+        "wires": [
+            [
+                "4fdfc812.ffdf28"
+            ]
+        ]
+    },
+    {
+        "id": "14544c6f.c0c514",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:03:6d:60:c5-01-0406",
+        "device_name": "Presence 11 : ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 166,
+        "y": 1459,
+        "wires": [
+            [
+                "6c67eb01.87988c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6c67eb01.87988c",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\n\nif(msg.payload.presence === true)\n{   msg.payload = 1000\n    /*{\n        sensor_position_0: 1000\n    }*/\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 666,
+        "y": 1452,
+        "wires": [
+            [
+                "f9c33524.a45ab"
+            ]
+        ]
+    },
+    {
+        "id": "defd7d6.876878",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:35:7e:5a-01-0006",
+        "device_name": "TRÅDFRI Motion sensor : ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 204,
+        "y": 1522,
+        "wires": [
+            [
+                "27224d5b.d0c05a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "24e089e4.192586",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:41:37:3e-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 207,
+        "y": 1579,
+        "wires": [
+            [
+                "678460e6.bf5ad8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c27cd1ff.d036e",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "Detect_Seq",
+        "func": "var aux = msg.payload;\nmsg.payload = {\n    seq_json: aux\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 951,
+        "y": 1693,
+        "wires": [
+            [
+                "af1cb46d.e549f"
+            ]
+        ]
+    },
+    {
+        "id": "27224d5b.d0c05a",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\n\nif(msg.payload.presence === true)\n{   msg.payload = 1100\n    /*{\n        sensor_position_1: 1100\n    }*/\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 1514,
+        "wires": [
+            [
+                "f9c33524.a45ab"
+            ]
+        ]
+    },
+    {
+        "id": "678460e6.bf5ad8",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\n\nif(msg.payload.presence === true)\n{   msg.payload = 1001\n    /*{\n        sensor_position_2: 1001\n    }*/\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 665,
+        "y": 1567,
+        "wires": [
+            [
+                "f9c33524.a45ab"
+            ]
+        ]
+    },
+    {
+        "id": "95ef1758.806e28",
+        "type": "json",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 760,
+        "y": 1693,
+        "wires": [
+            [
+                "c27cd1ff.d036e"
+            ]
+        ]
+    },
+    {
+        "id": "af1cb46d.e549f",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sequences",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1151,
+        "y": 1691,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fdfc812.ffdf28",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "Filter_size",
+        "func": "if(msg.payload.length > 1)\n{\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 533,
+        "y": 1690,
+        "wires": [
+            [
+                "95ef1758.806e28"
+            ]
+        ]
+    },
+    {
+        "id": "a0fcfc5d.39b92",
+        "type": "http request",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections/name/Motion Sensor",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 290,
+        "y": 1040,
+        "wires": [
+            [
+                "b8aaa187.878158",
+                "26841d17.ec4da2",
+                "2fd3fe74.817172"
+            ]
+        ]
+    },
+    {
+        "id": "8725e43a.93ea7",
+        "type": "inject",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 1039,
+        "wires": [
+            [
+                "a0fcfc5d.39b92"
+            ]
+        ]
+    },
+    {
+        "id": "b8aaa187.878158",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Calc_Occurrence_2",
+        "func": "var all_data = msg.payload;\ndetection_comp = [{\n    count: 0,\n    sin : 0,\n    sout : 0\n}];\n\nvar comp_size = 1;\ndetection_comp[0].count = 1;\ndetection_comp[0].sin = all_data[0].device_position;\ndetection_comp[0].sout = all_data[1].device_position;\n\nvar ver = 0;\nfor(var i = 2; i < all_data.length;i++)//all_data.length\n{\n    //if(Math.abs(all_data[i-1].timestamp - all_data[i].timestamp) < 20)\n    {\n        ver = 0;\n        for(var j = 0; j < comp_size;j++)\n        {\n            if(detection_comp[j].sin === all_data[i-1].device_position && detection_comp[j].sout === all_data[i].device_position)\n            {\n                detection_comp[j].count = detection_comp[j].count + 1;\n                ver++;\n            }\n        }\n        if(ver === 0)\n        {\n            comp_size++;\n            var new_obj = {};\n            new_obj.count = 1;\n            new_obj.sin = all_data[i-1].device_position;\n            new_obj.sout = all_data[i].device_position;\n            detection_comp.push(new_obj);\n        }\n    }\n}\nmsg.payload = detection_comp;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 536,
+        "y": 1039,
+        "wires": [
+            [
+                "73abb7fb.cd0978"
+            ]
+        ]
+    },
+    {
+        "id": "52d37f67.f66a58",
+        "type": "debug",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1052,
+        "y": 1036,
+        "wires": []
+    },
+    {
+        "id": "73abb7fb.cd0978",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Sort_2",
+        "func": "var data = msg.payload;\n\n//Get list of motion sensors\nvar sensors_list = [];\nfor(var i = 0; i < data.length; i++)\n{\n    var ver_0 = 0;\n    var ver_1 = 0;\n    for(var j = 0; j < sensors_list.length; j++)\n    {\n        if(data[i].sin === sensors_list[j])\n        {\n            ver_0 = 1;\n        }\n        if(data[i].sout === sensors_list[j])\n        {\n            ver_1 = 1;\n        }\n    }\n    \n    if(ver_0 === 0 && ver_1 === 0)\n    {\n        if(data[i].sin != data[i].sout)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sout);\n        }\n        else\n        {\n            sensors_list.push(data[i].sin);\n        }\n    }\n    else if(ver_0 === 0 && ver_1 === 1)\n    {\n        sensors_list.push(data[i].sin);\n    }\n    else if(ver_0 === 1 && ver_1 === 0)\n    {\n        sensors_list.push(data[i].sout);\n    }\n    \n}\n\n//Build P Matrix\nvar P_matrix = [{}];\nfor(j = 0; j < sensors_list.length; j++)\n{\n    for(var t = 0; t < sensors_list.length; t++)\n    {\n        var check = 0;\n        for(i = 0; i < data.length; i++)\n        {\n            if(data[i].sin === sensors_list[j] && data[i].sout === sensors_list[t])\n            {\n                P_matrix.push(data[i]);\n                check++;\n            }\n        }\n        if(check === 0)\n        {\n            var new_obj = {};\n            new_obj.count = 0;\n            new_obj.sin = sensors_list[j];\n            new_obj.sout = sensors_list[t];\n            P_matrix.push(new_obj);\n        }\n    }\n}\nP_matrix.splice(0,1);\n\nfor(i = 0; i < P_matrix.length; i = i + Math.sqrt(P_matrix.length))\n{\n    var total = 0;\n    for(j = 0; j < Math.sqrt(P_matrix.length); j++)\n    {\n        total = total + P_matrix[i+j].count;\n    }\n    \n    for(j = 0; j < Math.sqrt(P_matrix.length); j++)\n    {\n        P_matrix[i+j].count = P_matrix[i+j].count/total;\n    }\n}\n\nmsg.payload = P_matrix;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 735,
+        "y": 1037,
+        "wires": [
+            [
+                "52d37f67.f66a58",
+                "3f2d19e4.8661c6"
+            ]
+        ]
+    },
+    {
+        "id": "e687b4ee.881e6",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Calc_Occurrence_2",
+        "func": "var all_data = msg.payload;\ndetection_comp = [{\n    count: 0,\n    sin : 0,\n    sout : 0\n}];\n\nvar comp_size = 1;\ndetection_comp[0].count = 1;\ndetection_comp[0].sin = all_data[0].device_position;\ndetection_comp[0].sout = all_data[1].device_position;\n\nvar ver = 0;\nfor(var i = 2; i < all_data.length;i++)//all_data.length\n{\n    ver = 0;\n    for(var j = 0; j < comp_size;j++)\n    {\n        if(detection_comp[j].sin === all_data[i-1].device_position && detection_comp[j].sout === all_data[i].device_position)\n        {\n            detection_comp[j].count = detection_comp[j].count + 1;\n            ver++;\n        }\n    }\n    if(ver === 0)\n    {\n        comp_size++;\n        var new_obj = {};\n        new_obj.count = 1;\n        new_obj.sin = all_data[i-1].device_position;\n        new_obj.sout = all_data[i].device_position;\n        detection_comp.push(new_obj);\n    }\n}\nmsg.payload = detection_comp;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 536,
+        "y": 1083,
+        "wires": [
+            [
+                "72a73a64.912924"
+            ]
+        ]
+    },
+    {
+        "id": "72a73a64.912924",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Sort_2",
+        "func": "var data = msg.payload;\n\n//Get list of motion sensors\nvar sensors_list = [];\nfor(var i = 0; i < data.length; i++)\n{\n    var ver_0 = 0;\n    var ver_1 = 0;\n    for(var j = 0; j < sensors_list.length; j++)\n    {\n        if(data[i].sin === sensors_list[j])\n        {\n            ver_0 = 1;\n        }\n        if(data[i].sout === sensors_list[j])\n        {\n            ver_1 = 1;\n        }\n    }\n    \n    if(ver_0 === 0 && ver_1 === 0)\n    {\n        if(data[i].sin != data[i].sout)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sout);\n        }\n        else\n        {\n            sensors_list.push(data[i].sin);\n        }\n    }\n    else if(ver_0 === 0 && ver_1 === 1)\n    {\n        sensors_list.push(data[i].sin);\n    }\n    else if(ver_0 === 1 && ver_1 === 0)\n    {\n        sensors_list.push(data[i].sout);\n    }\n    \n}\n\n//Build P Matrix\nvar P_matrix = [{}];\nfor(j = 0; j < sensors_list.length; j++)\n{\n    for(var t = 0; t < sensors_list.length; t++)\n    {\n        var check = 0;\n        for(i = 0; i < data.length; i++)\n        {\n            if(data[i].sin === sensors_list[j] && data[i].sout === sensors_list[t])\n            {\n                P_matrix.push(data[i]);\n                check++;\n            }\n        }\n        if(check === 0)\n        {\n            var new_obj = {};\n            new_obj.count = 0;\n            new_obj.sin = sensors_list[j];\n            new_obj.sout = sensors_list[t];\n            P_matrix.push(new_obj);\n        }\n    }\n}\nP_matrix.splice(0,1);\n\nfor(i = 0; i < P_matrix.length; i = i + Math.sqrt(P_matrix.length))\n{\n    var total = 0;\n    for(j = 0; j < Math.sqrt(P_matrix.length); j++)\n    {\n        total = total + P_matrix[i+j].count;\n    }\n    \n    for(j = 0; j < Math.sqrt(P_matrix.length); j++)\n    {\n        P_matrix[i+j].count = P_matrix[i+j].count/total;\n    }\n}\n\nmsg.payload = P_matrix;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 739,
+        "y": 1083,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43fd70da.558898",
+        "type": "debug",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1053,
+        "y": 1085,
+        "wires": []
+    },
+    {
+        "id": "26841d17.ec4da2",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "func": "var data = msg.payload;\nvar detections_list = [];\n\nfor(var i = 0;i < data.length; i++)\n{\n    if(data[i].detection_position !== 1001)\n    {\n        detections_list.push(data[i]);\n    }\n}\nmsg.payload = detections_list;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 329,
+        "y": 1083,
+        "wires": [
+            [
+                "e687b4ee.881e6"
+            ]
+        ]
+    },
+    {
+        "id": "2fd3fe74.817172",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Calc_Occurrence_3",
+        "func": "var all_data = msg.payload;\ndetection_comp = [{\n    count: 0,\n    sin : 0,\n    sbet:0,\n    sout : 0\n}];\n\nvar comp_size = 1;\ndetection_comp[0].count = 1;\ndetection_comp[0].sin = all_data[0].device_position;\ndetection_comp[0].sbet = all_data[1].device_position;\ndetection_comp[0].sout = all_data[2].device_position;\n\nvar ver = 0;\nfor(var i = 3; i < all_data.length;i++)//all_data.length\n{\n    ver = 0;\n    for(var j = 0; j < comp_size;j++)\n    {\n        if(detection_comp[j].sin === all_data[i-2].device_position && detection_comp[j].sbet === all_data[i-1].device_position && detection_comp[j].sout === all_data[i].device_position)\n        {\n            detection_comp[j].count = detection_comp[j].count + 1;\n            ver++;\n        }\n    }\n    if(ver === 0)\n    {\n        comp_size++;\n        var new_obj = {};\n        new_obj.count = 1;\n        new_obj.sin = all_data[i-2].device_position;\n        new_obj.sbet = all_data[i-1].device_position;\n        new_obj.sout = all_data[i].device_position;\n        detection_comp.push(new_obj);\n    }\n}\nmsg.payload = detection_comp;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 537,
+        "y": 1139,
+        "wires": [
+            [
+                "b71ab948.52ecc8"
+            ]
+        ]
+    },
+    {
+        "id": "9eff35ea.4a565",
+        "type": "debug",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1053,
+        "y": 1142,
+        "wires": []
+    },
+    {
+        "id": "b71ab948.52ecc8",
+        "type": "function",
+        "z": "a65b1de2.937398",
+        "name": "Sort_3",
+        "func": "var data = msg.payload;\n\n//Get list of motion sensors\nvar sensors_list = [];\nfor(var i = 0; i < data.length; i++)\n{\n    var ver_0 = 0;\n    var ver_1 = 0;\n    var ver_2 = 0;\n    for(var j = 0; j < sensors_list.length; j++)\n    {\n        if(data[i].sin === sensors_list[j])\n        {\n            ver_0 = 1;\n        }\n        if(data[i].sbet === sensors_list[j])\n        {\n            ver_1 = 1;\n        }\n        if(data[i].sout === sensors_list[j])\n        {\n            ver_2 = 1;\n        }\n    }\n    \n    if(ver_0 === 0 && ver_1 === 0 && ver_2 === 0)\n    {\n        if(data[i].sin != data[i].sout && data[i].sin != data[i].sbet && data[i].sbet != data[i].sout)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sbet);\n            sensors_list.push(data[i].sout);\n        }\n        else if(data[i].sin != data[i].sout && data[i].sin == data[i].sbet)\n        {\n            sensors_list.push(data[i].sbet);\n            sensors_list.push(data[i].sout);\n        }\n        else if(data[i].sin == data[i].sout && data[i].sin != data[i].sbet)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sbet);\n        }\n        else if(data[i].sin != data[i].sout && data[i].sout == data[i].sbet)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sout);\n        }\n        else\n        {\n            sensors_list.push(data[i].sin);\n        }\n    }\n    else if(ver_0 === 0 && ver_1 === 1 && ver_2 === 1)\n    {\n        sensors_list.push(data[i].sin);\n    }\n    else if(ver_0 === 1 && ver_1 === 0 && ver_2 === 1)\n    {\n        sensors_list.push(data[i].sbet);\n    }\n    else if(ver_0 === 1 && ver_1 === 1 && ver_2 === 0)\n    {\n        sensors_list.push(data[i].sout);\n    }\n    //-------------------------\n    else if(ver_0 === 0 && ver_1 === 0 && ver_2 === 1)\n    {\n        if(data[i].sin != data[i].sbet)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sbet);\n        }\n        else\n        {\n            sensors_list.push(data[i].sin);\n        }\n    }\n    else if(ver_0 === 1 && ver_1 === 0 && ver_2 === 0)\n    {\n        if(data[i].sout != data[i].sbet)\n        {\n            sensors_list.push(data[i].sbet);\n            sensors_list.push(data[i].sout);\n        }\n        else\n        {\n            sensors_list.push(data[i].sbet);\n        }\n    }\n    else if(ver_0 === 0 && ver_1 === 1 && ver_2 === 0)\n    {\n        if(data[i].sin != data[i].sout)\n        {\n            sensors_list.push(data[i].sin);\n            sensors_list.push(data[i].sout);\n        }\n        else\n        {\n            sensors_list.push(data[i].sout);\n        }\n    }\n    \n}\n\n//Build P Matrix\nvar P_matrix = [{}];\nfor(j = 0; j < sensors_list.length; j++)\n{\n    for(var h = 0; h < sensors_list.length; h++)\n    {\n        for(var t = 0; t < sensors_list.length; t++)\n        {\n            var check = 0;\n            for(i = 0; i < data.length; i++)\n            {\n                if(data[i].sin === sensors_list[j] && data[i].sbet === sensors_list[h] && data[i].sout === sensors_list[t])\n                {\n                    P_matrix.push(data[i]);\n                    check++;\n                }\n            }\n            if(check === 0)\n            {\n                var new_obj = {};\n                new_obj.count = 0;\n                new_obj.sin = sensors_list[j];\n                new_obj.sbet = sensors_list[h];\n                new_obj.sout = sensors_list[t];\n                P_matrix.push(new_obj);\n            }\n        }\n    }\n}\nP_matrix.splice(0,1);\n\nfor(i = 0; i < P_matrix.length; i = i + Math.pow(sensors_list.length, 2))\n{\n    var total = 0;\n    for(j = 0; j < Math.pow(sensors_list.length, 2); j++)\n    {\n        total = total + P_matrix[i+j].count;\n    }\n    \n    for(j = 0; j < Math.pow(sensors_list.length, 2); j++)\n    {\n        P_matrix[i+j].count = P_matrix[i+j].count/total;\n    }\n}\n\nmsg.payload = P_matrix;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 1140,
+        "wires": [
+            [
+                "9eff35ea.4a565",
+                "83c236d8.5d10d8"
+            ]
+        ]
+    },
+    {
+        "id": "74c69182.ffd268",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:30:64-01-0402",
+        "device_name": "Multi Sensor : ZHATemperature",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "e274e152.bd643"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5a3dcabe.c6eddc",
+        "type": "http request",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1149,
+        "y": 156,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "288a47c9.6511",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Multi Sensor\",\n    sensorDate: aux.lastupdated,\n    temperature: aux.temperature/100,\n    humidity: aux.humidity/100,\n    lux: aux.lux,\n    lightlevel: aux.lightlevel/100,\n    dark: aux.dark,\n    device_position: 9,\n    daylight: aux.daylight,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 850,
+        "y": 162,
+        "wires": [
+            [
+                "65671bf2.5866ac",
+                "59bf6803.86b87"
+            ]
+        ]
+    },
+    {
+        "id": "2efbdfbc.5b363",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:30:64-01-0405",
+        "device_name": "Multi Sensor : ZHAHumidity",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 171,
+        "y": 185,
+        "wires": [
+            [
+                "17e2924f.33091e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e983222c.0d2b",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:30:64-01-0400",
+        "device_name": "Multi Sensor : ZHALightLevel",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 170,
+        "y": 234,
+        "wires": [
+            [
+                "dfd57df4.154cf"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a1b639cb.a91158",
+        "type": "join",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "7",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 594,
+        "y": 170,
+        "wires": [
+            [
+                "288a47c9.6511"
+            ]
+        ]
+    },
+    {
+        "id": "e274e152.bd643",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    lastupdated: aux.lastupdated,\n    temperature: aux.temperature\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 411,
+        "y": 124,
+        "wires": [
+            [
+                "a1b639cb.a91158"
+            ]
+        ]
+    },
+    {
+        "id": "17e2924f.33091e",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    humidity: aux.humidity\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "a1b639cb.a91158"
+            ]
+        ]
+    },
+    {
+        "id": "dfd57df4.154cf",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    dark: aux.dark,\n    daylight: aux.daylight,\n    lightlevel: aux.lightlevel,\n    lux: aux.lux\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 228,
+        "wires": [
+            [
+                "a1b639cb.a91158"
+            ]
+        ]
+    },
+    {
+        "id": "65671bf2.5866ac",
+        "type": "debug",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7cd14862.b0ae4",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:2b:f5-01-0402",
+        "device_name": "Multi Sensor: ZHATemperature",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 184,
+        "y": 340,
+        "wires": [
+            [
+                "2481f5b3.175272"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1f90a602.0a5e42",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:2b:f5-01-0405",
+        "device_name": "Multi Sensor: ZHAHumidity",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 177,
+        "y": 399,
+        "wires": [
+            [
+                "8626e132.9c51f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "71c7d0d5.31c7c8",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:2b:f5-01-0400",
+        "device_name": "Multi Sensor: ZHALightLevel",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 184,
+        "y": 466,
+        "wires": [
+            [
+                "438df109.3ae168"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "51be35fe.909184",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Multi Sensor\",\n    sensorDate: aux.lastupdated,\n    temperature: aux.temperature/100,\n    humidity: aux.humidity/100,\n    lux: aux.lux,\n    lightlevel: aux.lightlevel/100,\n    dark: aux.dark,\n    device_position: 10,\n    daylight: aux.daylight,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 929,
+        "y": 394,
+        "wires": [
+            [
+                "9bfe47cf.548888",
+                "65671bf2.5866ac"
+            ]
+        ]
+    },
+    {
+        "id": "793dcc27.11a1c4",
+        "type": "join",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "7",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 707,
+        "y": 393,
+        "wires": [
+            [
+                "51be35fe.909184"
+            ]
+        ]
+    },
+    {
+        "id": "2481f5b3.175272",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    lastupdated: aux.lastupdated,\n    temperature: aux.temperature\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 487,
+        "y": 335,
+        "wires": [
+            [
+                "793dcc27.11a1c4"
+            ]
+        ]
+    },
+    {
+        "id": "8626e132.9c51f",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    humidity: aux.humidity\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 485,
+        "y": 391,
+        "wires": [
+            [
+                "793dcc27.11a1c4"
+            ]
+        ]
+    },
+    {
+        "id": "438df109.3ae168",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    dark: aux.dark,\n    daylight: aux.daylight,\n    lightlevel: aux.lightlevel,\n    lux: aux.lux\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 483,
+        "y": 454,
+        "wires": [
+            [
+                "793dcc27.11a1c4"
+            ]
+        ]
+    },
+    {
+        "id": "1675b972.ca15b7",
+        "type": "http request",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1228,
+        "y": 399,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c802fca6.cb6108",
+        "type": "mqtt in",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "topic": "esp/co2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "83499d79.7879b",
+        "x": 138,
+        "y": 573,
+        "wires": [
+            [
+                "17567f61.177609"
+            ]
+        ]
+    },
+    {
+        "id": "17567f61.177609",
+        "type": "json",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 337,
+        "y": 573,
+        "wires": [
+            [
+                "dad2b4a3.f0dd88"
+            ]
+        ]
+    },
+    {
+        "id": "dad2b4a3.f0dd88",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: aux.sensorType,\n    device_position: 11,\n    temperature: aux.temperature,\n    tvoc: aux.TVOC,\n    co2: aux.CO2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 518,
+        "y": 574,
+        "wires": [
+            [
+                "c1a7d205.772e9"
+            ]
+        ]
+    },
+    {
+        "id": "147dbab1.429e2d",
+        "type": "http request",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 829,
+        "y": 575,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "186b3307.266ce5",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "DELETE",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.19.0.3:3000/sensors/week/clean",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 429,
+        "y": 1416,
+        "wires": [
+            [
+                "ca360b9c.a35f2"
+            ]
+        ]
+    },
+    {
+        "id": "67720e5d.851638",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 192,
+        "y": 1416,
+        "wires": [
+            [
+                "186b3307.266ce5",
+                "f4fea3af.d43818",
+                "3254f9cb.1abc9e"
+            ]
+        ]
+    },
+    {
+        "id": "ca360b9c.a35f2",
+        "type": "debug",
+        "z": "cd488e57.ec56c",
+        "name": "Weekly Clean",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 670,
+        "y": 1412,
+        "wires": []
+    },
+    {
+        "id": "f4fea3af.d43818",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "DELETE",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.19.0.3:3000/sequences/week/clean",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 415,
+        "y": 1490,
+        "wires": [
+            [
+                "8beef4a9.08641"
+            ]
+        ]
+    },
+    {
+        "id": "8beef4a9.08641",
+        "type": "debug",
+        "z": "cd488e57.ec56c",
+        "name": "Weekly Clean",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 656,
+        "y": 1486,
+        "wires": []
+    },
+    {
+        "id": "3254f9cb.1abc9e",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "DELETE",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.19.0.3:3000/detections/week/clean",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 406,
+        "y": 1563,
+        "wires": [
+            [
+                "eb31ae3b.75e9f8"
+            ]
+        ]
+    },
+    {
+        "id": "eb31ae3b.75e9f8",
+        "type": "debug",
+        "z": "cd488e57.ec56c",
+        "name": "Weekly Clean",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 647,
+        "y": 1559,
+        "wires": []
+    },
+    {
+        "id": "e3508865.f3ed6",
+        "type": "function",
+        "z": "cd488e57.ec56c",
+        "name": "Motion",
+        "func": "p = msg.payload;\n//node.log(typeof p);\n//https://github.com/node-red/node-red-dashboard/blob/master/Charts.md#stored-data\nvar_data = {};\ntime_aux = Math.floor(p[0].timestamp/(24*60*60));\ncount = 0;\nt = 0;\nvar time_up = new Date();\nmsg.payload = {};\nfor(var i = 0; i < p.length; i++)\n{\n    if(Math.floor(p[i].timestamp/(24*60*60)) == time_aux)\n    {\n        count++\n    }\n    else\n    {\n        if(t === 0)\n        {\n            var_data.series = [\"\"];\n            var_data.data = [[count]];\n            time_up = new Date(time_aux*(24*60*60)*1000);\n            var_data.labels = [parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear())];\n            time_aux = Math.floor(p[i].timestamp/(24*60*60))\n            t++;\n            count = 1\n        }\n        else\n        {\n            var_data.data[0].push(count);\n            time_up = new Date(time_aux*(24*60*60)*1000);\n            var_data.labels.push(parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear()));\n            time_aux = Math.floor(p[i].timestamp/(24*60*60))\n            t++\n            count = 1\n        }\n    }\n}\nif(t === 0)\n{\n    var_data.series = [\"\"];\n    var_data.data = [[count]];\n    time_up = new Date(time_aux*(24*60*60)*1000);\n    var_data.labels = [parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear())];\n}\nelse\n{\n    var_data.data[0].push(count);\n    time_up = new Date(time_aux*(24*60*60)*1000);\n    var_data.labels.push(parse(\"%s/%s/%s\",time_up.getUTCDate(),time_up.getUTCMonth(),time_up.getFullYear()));\n}\nreturn {payload:[var_data]};\n\n\nfunction parse(str) {\n    var args = [].slice.call(arguments, 1),\n        i = 0;\n\n    return str.replace(/%s/g, () => args[i++]);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 476,
+        "y": 1057,
+        "wires": [
+            [
+                "705ce038.7f9c9"
+            ]
+        ]
+    },
+    {
+        "id": "9e47c636.b30ad",
+        "type": "mqtt in",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_0/light",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "83499d79.7879b",
+        "x": 358,
+        "y": 238,
+        "wires": [
+            [
+                "54f1d0a5.d5882"
+            ]
+        ]
+    },
+    {
+        "id": "e9083aa0.3a133",
+        "type": "deconz-output",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:02:a2:6c:00-0b",
+        "device_name": "Light 2 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 829,
+        "y": 230,
+        "wires": []
+    },
+    {
+        "id": "f2bfdc6d.0cc5c8",
+        "type": "inject",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 234,
+        "y": 104,
+        "wires": [
+            [
+                "2913cb9b.b94edc"
+            ]
+        ]
+    },
+    {
+        "id": "2913cb9b.b94edc",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "flow.set(\"var_0\", 0);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 402,
+        "y": 103,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54f1d0a5.d5882",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "if(msg.payload === 1)\n{\n    msg.payload = true;\n    return msg;\n}\nelse if(msg.payload === 0)\n{\n    msg.payload = false;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 517,
+        "y": 238,
+        "wires": [
+            [
+                "e9083aa0.3a133"
+            ]
+        ]
+    },
+    {
+        "id": "ee82a93.449abd8",
+        "type": "mqtt in",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_1/light",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "83499d79.7879b",
+        "x": 356,
+        "y": 308,
+        "wires": [
+            [
+                "a494cc6d.c535b8"
+            ]
+        ]
+    },
+    {
+        "id": "63921ace.812664",
+        "type": "mqtt in",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_0/plug",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "83499d79.7879b",
+        "x": 359,
+        "y": 365,
+        "wires": [
+            [
+                "bdc6f93d.aa2e38"
+            ]
+        ]
+    },
+    {
+        "id": "6f716b15.d9e44c",
+        "type": "mqtt in",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_1/plug",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "83499d79.7879b",
+        "x": 359,
+        "y": 422,
+        "wires": [
+            [
+                "300d8663.aaa7b2"
+            ]
+        ]
+    },
+    {
+        "id": "a494cc6d.c535b8",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "if(msg.payload === 1)\n{\n    msg.payload = true;\n    return msg;\n}\nelse if(msg.payload === 0)\n{\n    msg.payload = false;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 517,
+        "y": 308,
+        "wires": [
+            [
+                "3ede902c.19c56"
+            ]
+        ]
+    },
+    {
+        "id": "3ede902c.19c56",
+        "type": "deconz-output",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:17:88:01:04:11:a7:2a-0b",
+        "device_name": "Light 5 : Dimmable light",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 829,
+        "y": 308,
+        "wires": []
+    },
+    {
+        "id": "a58c380b.cdae98",
+        "type": "deconz-output",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:ba:78:23-01",
+        "device_name": "Light 3 : On/Off plug-in unit",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 836,
+        "y": 363,
+        "wires": []
+    },
+    {
+        "id": "bc201ee2.4373e",
+        "type": "deconz-output",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:0d:6f:ff:fe:b8:e2:2b-01",
+        "device_name": "Light 4 : On/Off plug-in unit",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 839,
+        "y": 419,
+        "wires": []
+    },
+    {
+        "id": "bdc6f93d.aa2e38",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "if(msg.payload === 1)\n{\n    msg.payload = true;\n    return msg;\n}\nelse if(msg.payload === 0)\n{\n    msg.payload = false;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 522,
+        "y": 365,
+        "wires": [
+            [
+                "a58c380b.cdae98"
+            ]
+        ]
+    },
+    {
+        "id": "300d8663.aaa7b2",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "if(msg.payload === 1)\n{\n    msg.payload = true;\n    return msg;\n}\nelse if(msg.payload === 0)\n{\n    msg.payload = false;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 525,
+        "y": 421,
+        "wires": [
+            [
+                "bc201ee2.4373e"
+            ]
+        ]
+    },
+    {
+        "id": "ac86f28c.19f728",
+        "type": "mqtt out",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_0/ctv",
+        "qos": "",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 955,
+        "y": 536,
+        "wires": []
+    },
+    {
+        "id": "907512f2.658f8",
+        "type": "inject",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 337,
+        "y": 538,
+        "wires": [
+            [
+                "7de5409c.f072f",
+                "f5fd9c95.55e748",
+                "e6dcda2a.cc3dd",
+                "bdf7b741.059078"
+            ]
+        ]
+    },
+    {
+        "id": "7de5409c.f072f",
+        "type": "deconz-get",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:30:64-01-0402",
+        "device_name": "Multi Sensor : ZHATemperature",
+        "state": "0",
+        "x": 558,
+        "y": 537,
+        "wires": [
+            [
+                "ff517f1f.6e2ac8"
+            ]
+        ]
+    },
+    {
+        "id": "f05daacc.2ba37",
+        "type": "mqtt out",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_0/chv",
+        "qos": "",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 976,
+        "y": 656,
+        "wires": []
+    },
+    {
+        "id": "f5fd9c95.55e748",
+        "type": "deconz-get",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:30:64-01-0405",
+        "device_name": "Multi Sensor : ZHAHumidity",
+        "state": "0",
+        "x": 559,
+        "y": 657,
+        "wires": [
+            [
+                "6b3be776.2c0978"
+            ]
+        ]
+    },
+    {
+        "id": "6b3be776.2c0978",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "var p = msg.payload;\nmsg.payload = p.humidity/100;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 798,
+        "y": 658,
+        "wires": [
+            [
+                "f05daacc.2ba37"
+            ]
+        ]
+    },
+    {
+        "id": "ff517f1f.6e2ac8",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "var p = msg.payload;\nmsg.payload = p.temperature/100;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 787,
+        "y": 538,
+        "wires": [
+            [
+                "ac86f28c.19f728"
+            ]
+        ]
+    },
+    {
+        "id": "fda43082.16a2d8",
+        "type": "mqtt out",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_1/ctv",
+        "qos": "",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 966,
+        "y": 730,
+        "wires": []
+    },
+    {
+        "id": "e6dcda2a.cc3dd",
+        "type": "deconz-get",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:2b:f5-01-0402",
+        "device_name": "Multi Sensor: ZHATemperature",
+        "state": "0",
+        "x": 569,
+        "y": 731,
+        "wires": [
+            [
+                "f6402e48.3025e"
+            ]
+        ]
+    },
+    {
+        "id": "c24938c8.e6d348",
+        "type": "mqtt out",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "topic": "/lab_1/chv",
+        "qos": "",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 987,
+        "y": 850,
+        "wires": []
+    },
+    {
+        "id": "bdf7b741.059078",
+        "type": "deconz-get",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:12:4b:00:13:a5:2b:f5-01-0405",
+        "device_name": "Multi Sensor: ZHAHumidity",
+        "state": "0",
+        "x": 570,
+        "y": 851,
+        "wires": [
+            [
+                "14918238.388bce"
+            ]
+        ]
+    },
+    {
+        "id": "14918238.388bce",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "var p = msg.payload;\nmsg.payload = p.humidity/100;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 809,
+        "y": 852,
+        "wires": [
+            [
+                "c24938c8.e6d348"
+            ]
+        ]
+    },
+    {
+        "id": "f6402e48.3025e",
+        "type": "function",
+        "z": "602e9edf.820b58",
+        "name": "",
+        "func": "var p = msg.payload;\nmsg.payload = p.temperature/100;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 798,
+        "y": 732,
+        "wires": [
+            [
+                "fda43082.16a2d8"
+            ]
+        ]
+    },
+    {
+        "id": "141e63dd.ea94e4",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 1880,
+        "wires": [
+            [
+                "668f0aea.196134"
+            ]
+        ]
+    },
+    {
+        "id": "668f0aea.196134",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 321,
+        "y": 1879,
+        "wires": [
+            [
+                "28507a8e.4eff76"
+            ]
+        ]
+    },
+    {
+        "id": "28507a8e.4eff76",
+        "type": "dropbox out",
+        "z": "cd488e57.ec56c",
+        "dropbox": "1605b768.f885a1",
+        "filename": "event_data_2.json",
+        "localFilename": "",
+        "name": "",
+        "x": 650,
+        "y": 1878,
+        "wires": []
+    },
+    {
+        "id": "fc66f15d.aab3c8",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 152,
+        "y": 1937,
+        "wires": [
+            [
+                "d912e172.8db418"
+            ]
+        ]
+    },
+    {
+        "id": "d912e172.8db418",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sequences",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 323,
+        "y": 1936,
+        "wires": [
+            [
+                "718bd4fc.ac0e54"
+            ]
+        ]
+    },
+    {
+        "id": "718bd4fc.ac0e54",
+        "type": "dropbox out",
+        "z": "cd488e57.ec56c",
+        "dropbox": "1605b768.f885a1",
+        "filename": "sequence_data_2.json",
+        "localFilename": "",
+        "name": "",
+        "x": 672,
+        "y": 1935,
+        "wires": []
+    },
+    {
+        "id": "be371576.f14ce8",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 2000,
+        "wires": [
+            [
+                "4f7eda76.b44f84"
+            ]
+        ]
+    },
+    {
+        "id": "4f7eda76.b44f84",
+        "type": "http request",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/sensors",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 321,
+        "y": 1999,
+        "wires": [
+            [
+                "4ccd39cc.b20a9"
+            ]
+        ]
+    },
+    {
+        "id": "4ccd39cc.b20a9",
+        "type": "dropbox out",
+        "z": "cd488e57.ec56c",
+        "dropbox": "1605b768.f885a1",
+        "filename": "sensor_data_2.json",
+        "localFilename": "",
+        "name": "",
+        "x": 660,
+        "y": 1998,
+        "wires": []
+    },
+    {
+        "id": "3f2d19e4.8661c6",
+        "type": "dropbox out",
+        "z": "a65b1de2.937398",
+        "dropbox": "1605b768.f885a1",
+        "filename": "PT_2.json",
+        "localFilename": "",
+        "name": "",
+        "x": 972,
+        "y": 1211,
+        "wires": []
+    },
+    {
+        "id": "83c236d8.5d10d8",
+        "type": "dropbox out",
+        "z": "a65b1de2.937398",
+        "dropbox": "1605b768.f885a1",
+        "filename": "PT_3.json",
+        "localFilename": "",
+        "name": "",
+        "x": 974,
+        "y": 1247,
+        "wires": []
+    },
+    {
+        "id": "3d25ff5e.240b5",
+        "type": "delay",
+        "z": "a65b1de2.937398",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 284,
+        "y": 93,
+        "wires": [
+            [
+                "4c8d7cbf.aa9c74",
+                "d4d0d6ef.d8a0b8"
+            ]
+        ]
+    },
+    {
+        "id": "f77e9472.1df688",
+        "type": "mqtt out",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "esp/relay",
+        "qos": "1",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "be2a7cc5.d5cb7",
+        "type": "inject",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 276,
+        "y": 120,
+        "wires": [
+            [
+                "cbfbf5fc.a1fe88"
+            ]
+        ]
+    },
+    {
+        "id": "cbfbf5fc.a1fe88",
+        "type": "function",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "func": "msg.payload = '0';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 451,
+        "y": 121,
+        "wires": [
+            [
+                "f77e9472.1df688"
+            ]
+        ]
+    },
+    {
+        "id": "94aa2da5.bbee9",
+        "type": "mqtt out",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "esp/relay",
+        "qos": "1",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9fc72a06.f983f8",
+        "type": "inject",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 273,
+        "y": 184,
+        "wires": [
+            [
+                "fcc9a4fa.29ce58"
+            ]
+        ]
+    },
+    {
+        "id": "fcc9a4fa.29ce58",
+        "type": "function",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "func": "msg.payload = '1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 451,
+        "y": 181,
+        "wires": [
+            [
+                "94aa2da5.bbee9"
+            ]
+        ]
+    },
+    {
+        "id": "db49730e.9a0b9",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "14:b4:57:ff:fe:52:3d:b2-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 188,
+        "y": 330,
+        "wires": [
+            [
+                "3a3d8c8c.293c8c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c640a235.f35eb",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "14:b4:57:ff:fe:6c:4e:56-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 187,
+        "y": 375,
+        "wires": [
+            [
+                "4edd648.77a349c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "39287246.c3c346",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "14:b4:57:ff:fe:3e:a5:22-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 187,
+        "y": 419,
+        "wires": [
+            [
+                "f9dcf48.63b8288"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "382b2ace.1b320e",
+        "type": "deconz-input",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "14:b4:57:ff:fe:6b:2e:24-01-0006",
+        "device_name": "TRÅDFRI Motion sensor: ZHAPresence",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": false,
+        "x": 184,
+        "y": 469,
+        "wires": [
+            [
+                "2a6b27d7.b1016"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3a3d8c8c.293c8c",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 3,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 506,
+        "y": 322,
+        "wires": [
+            [
+                "99a8ab11.2f6fa8"
+            ]
+        ]
+    },
+    {
+        "id": "4edd648.77a349c",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 4,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 504,
+        "y": 367,
+        "wires": [
+            [
+                "9077c63a.d798d8",
+                "7d60ce87.234458"
+            ]
+        ]
+    },
+    {
+        "id": "f9dcf48.63b8288",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 5,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 506,
+        "y": 411,
+        "wires": [
+            [
+                "8e78666e.c231a8"
+            ]
+        ]
+    },
+    {
+        "id": "2a6b27d7.b1016",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Motion Sensor\",\n    detectionDate: aux.lastupdated,\n    device_position: 6,\n    motion: aux.presence\n}\nif(msg.payload.motion === true)\n{\n    return msg;\n}\nelse\n{\n    \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 506,
+        "y": 460,
+        "wires": [
+            [
+                "211920b3.483f1"
+            ]
+        ]
+    },
+    {
+        "id": "93e9fd05.027e5",
+        "type": "inject",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 520,
+        "y": 120,
+        "wires": [
+            [
+                "f5dbe59b.92e5b"
+            ]
+        ]
+    },
+    {
+        "id": "f5dbe59b.92e5b",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "global.set(\"Data_Storage\", 1);\nglobal.set(\"Device_Code\", 0);\nmsg.payload = \"Starting Data Retrieving\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "eded069.ae9f0f8"
+            ]
+        ]
+    },
+    {
+        "id": "eded069.ae9f0f8",
+        "type": "debug",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 910,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "80c8283c.419668",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 736,
+        "y": 182,
+        "wires": [
+            [
+                "e9454526.0914d8"
+            ]
+        ]
+    },
+    {
+        "id": "ffe73ff5.23606",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 731,
+        "y": 227,
+        "wires": [
+            [
+                "e57a0735.11ef4"
+            ]
+        ]
+    },
+    {
+        "id": "cbd27128.515bf",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 734,
+        "y": 274,
+        "wires": [
+            [
+                "66ac3496.1ba1b4"
+            ]
+        ]
+    },
+    {
+        "id": "99a8ab11.2f6fa8",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 735,
+        "y": 321,
+        "wires": [
+            [
+                "1734d65a.46edaa"
+            ]
+        ]
+    },
+    {
+        "id": "9077c63a.d798d8",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 737,
+        "y": 367,
+        "wires": [
+            [
+                "304733c2.f885f4"
+            ]
+        ]
+    },
+    {
+        "id": "8e78666e.c231a8",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 734,
+        "y": 409,
+        "wires": [
+            [
+                "3b24eb0d.c9f6d4"
+            ]
+        ]
+    },
+    {
+        "id": "211920b3.483f1",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 738,
+        "y": 459,
+        "wires": [
+            [
+                "6d167292.813974"
+            ]
+        ]
+    },
+    {
+        "id": "fbbd2235.b36468",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 752,
+        "y": 764,
+        "wires": [
+            [
+                "2563b12f.164ce6"
+            ]
+        ]
+    },
+    {
+        "id": "122c65b3.1292f2",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 565,
+        "y": 1262,
+        "wires": [
+            [
+                "f614f3b5.221718"
+            ]
+        ]
+    },
+    {
+        "id": "59bf6803.86b87",
+        "type": "switch",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1002,
+        "y": 162,
+        "wires": [
+            [
+                "5a3dcabe.c6eddc"
+            ]
+        ]
+    },
+    {
+        "id": "9bfe47cf.548888",
+        "type": "switch",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1067,
+        "y": 394,
+        "wires": [
+            [
+                "1675b972.ca15b7"
+            ]
+        ]
+    },
+    {
+        "id": "c1a7d205.772e9",
+        "type": "switch",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "property": "\"Data_Storage\"",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 661,
+        "y": 574,
+        "wires": [
+            [
+                "147dbab1.429e2d"
+            ]
+        ]
+    },
+    {
+        "id": "bea5c72e.f7dfe8",
+        "type": "inject",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 884,
+        "y": 49,
+        "wires": [
+            [
+                "32b096dc.675caa"
+            ]
+        ]
+    },
+    {
+        "id": "32b096dc.675caa",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "global.set(\"Data_Storage\", 0);\nmsg.payload = \"Stopped Data Retrieving\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1077,
+        "y": 48,
+        "wires": [
+            [
+                "eded069.ae9f0f8"
+            ]
+        ]
+    },
+    {
+        "id": "e57a0735.11ef4",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 913,
+        "y": 227,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "304733c2.f885f4",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 912,
+        "y": 365,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "3b24eb0d.c9f6d4",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 913,
+        "y": 409,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "6d167292.813974",
+        "type": "http request",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "172.18.0.3:3000/detections",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 911,
+        "y": 457,
+        "wires": [
+            [
+                "77721d86.d71fdc"
+            ]
+        ]
+    },
+    {
+        "id": "77721d86.d71fdc",
+        "type": "debug",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1165,
+        "y": 313,
+        "wires": []
+    },
+    {
+        "id": "7d60ce87.234458",
+        "type": "mqtt out",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "topic": "esp/motion0",
+        "qos": "",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 1185,
+        "y": 215,
+        "wires": []
+    },
+    {
+        "id": "ed196d84.0642d8",
+        "type": "ui_template",
+        "z": "cd488e57.ec56c",
+        "group": "fd3195d7.6f737",
+        "name": "",
+        "order": 1,
+        "width": "20",
+        "height": "21",
+        "format": "<!doctype html>\n<html>\n<head>\n  <title>Network</title>\n  <script type=\"text/javascript\" src=\"https://unpkg.com/vis-network/standalone/umd/vis-network.min.js\"></script> \n  <style type=\"text/css\">\n    #mynetwork {\n      width: 1200px;\n      height: 800px;\n      border: 1px solid lightgray;\n    }\n  </style> \n</head>\n<body>\n<div id=\"mynetwork\"></div>\n<script type=\"text/javascript\">\n\n    //console.log(readTextFile(\"file:///var/snap/node-red/522/out.txt\"))\n  // create an array with nodes\n  var nodes = new vis.DataSet([\n    {id: 0, label: 'Sensor 0'},//, color: \"red\"},\n    {id: 1, label: 'Sensor 1'},//, color: \"yellow\"},\n    {id: 2, label: 'Sensor 2'},//, color: \"green\"},\n    {id: 3, label: 'Sensor 3'},//, color: \"grey\"},\n    {id: 4, label: 'Sensor 4'},//, color: \"black\"},\n    {id: 5, label: 'Sensor 5'},//, color: \"orange\"},\n    {id: 6, label: 'Sensor 6'},//, color: \"blue\"}\n  ]);\n  \n  //var out = [[[0, 2], 97], [[2, 5], 209], [[5, 6], 305], [[6, 3], 95], [[3, 0], 82], [[0, 1], 94], [[1, 2], 229], [[2, 2], 996], [[6, 2], 242], [[6, 5], 379], [[5, 2], 217], [[6, 6], 294], [[2, 6], 276], [[6, 1], 96], [[1, 0], 134], [[0, 3], 64], [[3, 2], 257], [[5, 3], 133], [[3, 1], 249], [[2, 1], 196], [[1, 4], 16], [[2, 4], 49], [[4, 1], 19], [[1, 3], 237], [[3, 5], 83], [[5, 1], 91], [[1, 1], 43], [[3, 3], 156], [[1, 6], 79], [[2, 3], 255], [[0, 4], 4], [[4, 2], 43], [[2, 0], 77], [[0, 5], 30], [[6, 0], 27], [[0, 0], 7], [[3, 6], 108], [[4, 5], 17], [[6, 4], 20], [[4, 6], 20], [[1, 5], 61], [[3, 4], 25], [[5, 0], 20], [[0, 6], 31], [[5, 4], 10], [[5, 5], 91], [[4, 4], 4], [[4, 0], 3], [[4, 3], 22], [[2, 7], 1], [[7, 7], 6], [[7, 0], 1], [[0, 7], 1], [[7, 1], 1]];\n  var out = [[[0, 0], 196], [[2, 5], 105], [[5, 6], 140], [[3, 3], 935], [[0, 1], 22], [[1, 2], 33], [[2, 2], 2091], [[5, 5], 363], [[6, 6], 899], [[6, 5], 211], [[5, 2], 122], [[1, 0], 40], [[0, 3], 23], [[5, 3], 86], [[1, 1], 595], [[3, 0], 15], [[2, 4], 13], [[4, 1], 8], [[3, 5], 50], [[5, 1], 58], [[2, 1], 34], [[4, 4], 83], [[1, 5], 36], [[5, 4], 7], [[4, 2], 12], [[1, 4], 9], [[4, 5], 7]];\n  //var out = [[[3,0],1],[[0,3],1],[[0,1],1],[[1,0],1],[[3,5],1],[[5,3],1],[[6,5],1],[[5,6],1],[[5,2],1],[[2,5],1],[[1,2],1],[[2,1],1],[[1,5],1],[[5,1],1],[[5,4],1],[[4,5],1],[[1,4],1],[[4,1],1],[[2,4],1],[[4,2],1],[[1,2],1],[[2,1],1],[[0,0],1],[[1,1],1],[[2,2],1],[[3,3],1],[[4,4],1],[[5,5],1],[[6,6],1]]\n  var scaling = 1;\n  var i;\n  var t;\n  for(i = 0;i < out.length; i++)\n  {\n      if(i == 0)\n      {\n        if(out[i][0].length < 2)\n        {\n            t = [{from: out[i][0][0], to: out[i][0][0], value: out[i][1]*scaling}]\n        }\n        else\n        {\n            t = [{from: out[i][0][0], to: out[i][0][1], value: out[i][1]*scaling}]//label: (out[i][1]*scaling).toString()\n        }\n      }\n      else\n      {\n        if(out[i][0].length < 2)\n        {\n            t.push({from: out[i][0][0], to: out[i][0][0], value: out[i][1]*scaling})\n        }\n        else\n        {\n            t.push({from: out[i][0][0], to: out[i][0][1], value: out[i][1]*scaling})\n        }\n      }\n  }\n  console.log(t);\n  // create an array with edges\n  var edges = new vis.DataSet(/*[\n    {from: 1, to: 3, value: 1},\n    {from: 1, to: 2, value: 1},\n    {from: 2, to: 4, value: 1},\n    {from: 2, to: 5, value: 1},\n    {from: 3, to: 3, value: 1}\n  ]*/t);\n \n  // create a network\n  var container = document.getElementById('mynetwork');\n  var data = {\n    nodes: nodes,\n    edges: edges\n  };\n  var options = {\n  physics: {\n        enabled: false,\n        hierarchicalRepulsion: {\n            centralGravity: 0.0,\n            springLength: 500,\n            springConstant: 0.01,\n            nodeDistance: 400,\n            damping: 0.09\n        }\n    }\n  }\n  var network = new vis.Network(container, data, options);\n  \n  function readTextFile(file)\n{\n    var rawFile = new XMLHttpRequest();\n    rawFile.open(\"GET\", file, false);\n    rawFile.onreadystatechange = function ()\n    {\n        if(rawFile.readyState === 4)\n        {\n            if(rawFile.status === 200 || rawFile.status == 0)\n            {\n                var allText = rawFile.responseText;\n                alert(allText);\n            }\n        }\n    }\n    rawFile.send(null);\n}\n</script> \n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1079,
+        "y": 1313,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48533829.703238",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 902,
+        "y": 1301,
+        "wires": [
+            [
+                "ed196d84.0642d8"
+            ]
+        ]
+    },
+    {
+        "id": "f3bd613f.020f98",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 2220,
+        "wires": [
+            [
+                "137d306.f4c2e5"
+            ]
+        ]
+    },
+    {
+        "id": "137d306.f4c2e5",
+        "type": "exec",
+        "z": "cd488e57.ec56c",
+        "command": "node-red-restart",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 410,
+        "y": 2220,
+        "wires": [
+            [
+                "3b468c37.ee28ec"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3b468c37.ee28ec",
+        "type": "debug",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "be5a2a9a.3eba7",
+        "type": "inject",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 912,
+        "y": 1361,
+        "wires": [
+            [
+                "b6c4898c.7c3cb"
+            ]
+        ]
+    },
+    {
+        "id": "b6c4898c.7c3cb",
+        "type": "ui_template",
+        "z": "cd488e57.ec56c",
+        "d": true,
+        "group": "e2484a8d.86ce1",
+        "name": "",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "format": "<!doctype html>\n<html>\n<head>\n  <title>Network</title>\n  <script type=\"text/javascript\" src=\"https://unpkg.com/vis-network/standalone/umd/vis-network.min.js\"></script> \n  <style type=\"text/css\">\n    #mynetwork {\n      width: 1200px;\n      height: 800px;\n      border: 1px solid lightgray;\n    }\n  </style> \n</head>\n<body>\n    <img src=\"/home/euroage/Documents/euroage_iot/drawing.png\" id=\"img0\">\n    <script>\n        // here you can use the localstorage\n                // is statement checks if the image is in localstorage as a blob string\n                if(localStorage.getItem(\"/home/euroage/Documents/euroage_iot/drawing.png\") !== null){\n\n                var globalHolder = document.getElementById('globalHolder');\n                var wall = localStorage.getItem('/home/euroage/Documents/euroage_iot/drawing.png');\n                globalHolder.style.backgroundImage= \"url(\"+wall+\")\";\n\n\n                 }else{\n\n                // if the image is not saved as blob in local storage\n                // save it for the future by the use of canvas api and toDataUrl method\n                var img = new Image();\n                img.src = '/home/euroage/Documents/euroage_iot/drawing.png';\n                img.onload = function () {\n\n                var canvas = document.createElement(\"canvas\");\n                canvas.width =this.width;\n                canvas.height =this.height;\n\n                var ctx = canvas.getContext(\"2d\");\n                ctx.drawImage(this, 0, 0);\n                var dataURL = canvas.toDataURL();\n                localStorage.setItem('wall_blue', dataURL);\n\n                };\n                 }\n    </script>\n</body>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1055,
+        "y": 1361,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d983520c.03aea",
+        "type": "ui_button",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "e2484a8d.86ce1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Switch 0",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "x": 509,
+        "y": 2333,
+        "wires": [
+            [
+                "16c49bae.7705a4",
+                "8090d4fb.33c6f8"
+            ]
+        ]
+    },
+    {
+        "id": "16c49bae.7705a4",
+        "type": "debug",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 849,
+        "y": 2262,
+        "wires": []
+    },
+    {
+        "id": "8090d4fb.33c6f8",
+        "type": "mqtt out",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "esp/switch_0",
+        "qos": "1",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 766,
+        "y": 2329,
+        "wires": []
+    },
+    {
+        "id": "d49063d1.459508",
+        "type": "mqtt out",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "topic": "esp/switch_1",
+        "qos": "1",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 766,
+        "y": 2381,
+        "wires": []
+    },
+    {
+        "id": "1d33e61e.322f32",
+        "type": "ui_button",
+        "z": "cd488e57.ec56c",
+        "name": "",
+        "group": "e2484a8d.86ce1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Switch 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "x": 510,
+        "y": 2379,
+        "wires": [
+            [
+                "16c49bae.7705a4",
+                "d49063d1.459508"
+            ]
+        ]
+    },
+    {
+        "id": "80803f08.d41ef",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:04:4a:63:ac-01-0402",
+        "device_name": "Multi Sensor: ZHATemperature",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": true,
+        "x": 191,
+        "y": 686,
+        "wires": [
+            [
+                "5c228c57.7fe4b4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b076b486.c2cc5",
+        "type": "debug",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 981,
+        "y": 744,
+        "wires": []
+    },
+    {
+        "id": "314d09e4.a54c16",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:04:4a:63:ac-01-0405",
+        "device_name": "Humidity 23 : ZHAHumidity",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": true,
+        "x": 174,
+        "y": 769,
+        "wires": [
+            [
+                "8a6fa018.6c81"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5b0cb4c6.c7eec4",
+        "type": "deconz-input",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "server": "af2ae513.46dea",
+        "device": "00:15:8d:00:04:4a:63:ac-01-0403",
+        "device_name": "Pressure 24 : ZHAPressure",
+        "state": "0",
+        "output": "always",
+        "outputAtStartup": true,
+        "x": 185,
+        "y": 817,
+        "wires": [
+            [
+                "26cf4ad1.9c97d6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5c228c57.7fe4b4",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    lastupdated: aux.lastupdated,\n    temperature: aux.temperature\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 451,
+        "y": 685,
+        "wires": [
+            [
+                "8a377ff0.01ec58"
+            ]
+        ]
+    },
+    {
+        "id": "8a6fa018.6c81",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    humidity: aux.humidity\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 449,
+        "y": 759,
+        "wires": [
+            [
+                "8a377ff0.01ec58"
+            ]
+        ]
+    },
+    {
+        "id": "26cf4ad1.9c97d6",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    pressure: aux.pressure\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 447,
+        "y": 821,
+        "wires": [
+            [
+                "8a377ff0.01ec58"
+            ]
+        ]
+    },
+    {
+        "id": "8a377ff0.01ec58",
+        "type": "join",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 613,
+        "y": 742,
+        "wires": [
+            [
+                "7c2b1995.69412"
+            ]
+        ]
+    },
+    {
+        "id": "7c2b1995.69412",
+        "type": "function",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "func": "var aux = msg.payload;\nmsg.payload = \n{\n    name: \"Multi Sensor\",\n    sensorDate: aux.lastupdated,\n    temperature: aux.temperature/100,\n    humidity: aux.humidity/100,\n    pressure: aux.pressure/100,\n    device_position: 12\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 783,
+        "y": 744,
+        "wires": [
+            [
+                "b076b486.c2cc5",
+                "8d6d6fee.0d3ef"
+            ]
+        ]
+    },
+    {
+        "id": "8d6d6fee.0d3ef",
+        "type": "mqtt out",
+        "z": "fdd4af97.4e40a8",
+        "name": "",
+        "topic": "esp/temp_12",
+        "qos": "1",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 942,
+        "y": 847,
+        "wires": []
+    },
+    {
+        "id": "917bf78c.449a68",
+        "type": "mqtt in",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "esp/relay_state_0",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "83499d79.7879b",
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "948c5041.5bd288"
+            ]
+        ]
+    },
+    {
+        "id": "948c5041.5bd288",
+        "type": "debug",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 497,
+        "y": 394,
+        "wires": []
+    },
+    {
+        "id": "375a442d.b196e4",
+        "type": "inject",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "900",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "5c8e81c6.59519"
+            ]
+        ]
+    },
+    {
+        "id": "84b1482c.dda09",
+        "type": "mqtt out",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "esp/relay",
+        "qos": "",
+        "retain": "",
+        "broker": "83499d79.7879b",
+        "x": 660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5c8e81c6.59519",
+        "type": "function",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "func": "msg.payload = '2';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "84b1482c.dda09"
+            ]
+        ]
+    },
+    {
+        "id": "16cd7da5.27ef3a",
+        "type": "mqtt in",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "esp/connect",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "83499d79.7879b",
+        "x": 328,
+        "y": 515,
+        "wires": [
+            [
+                "c9900d34.0c3668"
+            ]
+        ]
+    },
+    {
+        "id": "c9900d34.0c3668",
+        "type": "debug",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 495,
+        "y": 510,
+        "wires": []
+    },
+    {
+        "id": "88f15535.19c97",
+        "type": "mqtt in",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "topic": "esp/relay_state_1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "83499d79.7879b",
+        "x": 294,
+        "y": 460,
+        "wires": [
+            [
+                "a3c8b5f4.7f729"
+            ]
+        ]
+    },
+    {
+        "id": "a3c8b5f4.7f729",
+        "type": "debug",
+        "z": "198d5d1.285ed23",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 500,
+        "y": 461,
+        "wires": []
+    },
+    {
+        "id": "d78da3af.1b9458",
+        "type": "mqtt in",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "topic": "paho/devices",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "83499d79.7879b",
+        "x": 170,
+        "y": 1080,
+        "wires": [
+            [
+                "4d068906.b97988"
+            ]
+        ]
+    },
+    {
+        "id": "4d068906.b97988",
+        "type": "function",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "func": "msg.payload = Buffer.from(msg.payload);\nmsg.payload = msg.payload.toString();\nif(msg.payload == \"Lights\")\n{\n    msg.payload = 0;\n}\nelse if(msg.payload == \"Coffee\")\n{\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 1080,
+        "wires": [
+            [
+                "8bd27e78.a22e68"
+            ]
+        ]
+    },
+    {
+        "id": "8bd27e78.a22e68",
+        "type": "switch",
+        "z": "ea93235.8080ae",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 1100,
+        "wires": [
+            [
+                "4923e8ec.c4e318",
+                "f90a7e42.72437"
+            ],
+            [
+                "1343bc66.5c4674",
+                "9dee591b.0e614"
+            ]
+        ]
+    },
+    {
+        "id": "3cf38f2a.ce4b",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "Save Sequence (not in use)",
+        "info": "",
+        "x": 180,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "a391219d.10516",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "MQTT ESP32 Data",
+        "info": "",
+        "x": 150,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "bfeaf87.6efb988",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "MQTT ROBOT Data",
+        "info": "",
+        "x": 170,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "b941807b.a23608",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "ZigBee Switch",
+        "info": "",
+        "x": 90,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "743a694.65fd298",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "ZigBee Motion Sensors",
+        "info": "",
+        "x": 120,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2c6ee154.359356",
+        "type": "comment",
+        "z": "ea93235.8080ae",
+        "name": "Activate to start recording data to DB",
+        "info": "",
+        "x": 570,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cb414236.b6ad48",
+        "type": "comment",
+        "z": "fdd4af97.4e40a8",
+        "name": "Sensor Data",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f023ed89.10ce58",
+        "type": "comment",
+        "z": "cd488e57.ec56c",
+        "name": "IFTTT integration",
+        "info": "",
+        "x": 130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d7707816.749ab",
+        "type": "comment",
+        "z": "cd488e57.ec56c",
+        "name": "Data Display",
+        "info": "",
+        "x": 110,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e00c8833.9b7698",
+        "type": "comment",
+        "z": "cd488e57.ec56c",
+        "name": "Save Data to Dropbox",
+        "info": "",
+        "x": 200,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "84579910.b92e28",
+        "type": "comment",
+        "z": "cd488e57.ec56c",
+        "name": "Clean Data if necessary",
+        "info": "",
+        "x": 230,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "8820b9d8.4a1b4",
+        "type": "comment",
+        "z": "198d5d1.285ed23",
+        "name": "Control Lights in IS3L",
+        "info": "",
+        "x": 300,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "59c3ad29.79b7a4",
+        "type": "comment",
+        "z": "198d5d1.285ed23",
+        "name": "Feed the watchdog",
+        "info": "",
+        "x": 90,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "cabec5f1.138f6",
+        "type": "comment",
+        "z": "198d5d1.285ed23",
+        "name": "State of the relays",
+        "info": "",
+        "x": 350,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e91e00fc.ca6c6",
+        "type": "comment",
+        "z": "a65b1de2.937398",
+        "name": "Calibrate using relations through sequences",
+        "info": "",
+        "x": 210,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "7bd8f923.1a6e98",
+        "type": "comment",
+        "z": "cd488e57.ec56c",
+        "name": "Custom display for ui",
+        "info": "",
+        "x": 940,
+        "y": 1260,
+        "wires": []
+    }
+]

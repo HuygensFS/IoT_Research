@@ -1,0 +1,25 @@
+{
+  "name": "euroage_iot",
+  "version": "1.0.0",
+  "description": "EuroAge project with the objective of implementing IoT to elderly homes",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/joaofalcaouc/euroage_iot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/joaofalcaouc/euroage_iot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "saslprep": "^1.0.3"
+  },
+  "devDependencies": {
+    "dotenv": "^8.1.0",
+    "nodemon": "^1.19.2"
+  }
+}
