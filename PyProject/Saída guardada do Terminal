@@ -1,0 +1,3941 @@
+Last login: Thu Mar  7 13:45:10 on console
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Traceback (most recent call last):
+  File "serial_node_no_ross.py", line 514, in <module>
+    open_connection()
+  File "serial_node_no_ross.py", line 276, in open_connection
+    ser.open()
+  File "/Users/joaobento/Library/Python/2.7/lib/python/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/tty.usbserial-DN00QQN1: [Errno 2] No such file or directory: '/dev/tty.usbserial-DN00QQN1'
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  $nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 153, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^Z
+[1]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+\  File "serial_node_no_ross.py", line 151
+    cmdId = temp[]
+                 ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 151
+    cmdId = temp[]
+                 ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 151
+    cmdId = temp[]
+                 ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 151
+    cmdId = temp[]
+                 ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  $nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+params
+cmdId
+type
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 156, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^Z
+[2]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  $nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Agora organizado: 
+params
+cmdId
+type
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 158, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^Z
+[3]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 156
+    print "".join([str(x) for x in temp])
+           ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 147
+    print str(item) 
+            ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 147
+    print str(item) 
+            ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 158
+    pprint("Key:")
+                 ^
+IndentationError: unindent does not match any outer indentation level
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 159
+    pprint(key)
+    ^
+IndentationError: unexpected indent
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  $nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Agora organizado: 
+'Key:'
+'Key:'
+'Key:'
+u'type'
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 162, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^[[A^[[A^Z
+[4]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  $nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Agora organizado: 
+[u'params', u'cmdId', u'type', u'req', u'rsp', u'status', u'ieeeaddr', u'shortaddr', u'devicetype', u'devicestate', u'numassocdevices', u'assocdeviceslist']
+[u'status', u'shortaddr', u'numassocdevices', u'type', u'req', u'ieeeaddr', u'cmdId', u'params', u'assocdeviceslist', u'devicetype', u'rsp', u'devicestate']
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 173, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^Z
+[5]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 174
+    print("CHEGUEI!!")
+        ^
+IndentationError: expected an indented block
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 175
+    print("CHEGUEI!!")
+        ^
+IndentationError: expected an indented block
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+Welcome
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+====================================================================
+Message Incoming
+Data:  $nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Agora organizado: 
+[u'params', u'cmdId', u'type', u'req', u'rsp', u'status', u'ieeeaddr', u'shortaddr', u'devicetype', u'devicestate', u'numassocdevices', u'assocdeviceslist']
+[u'status', u'shortaddr', u'numassocdevices', u'type', u'req', u'ieeeaddr', u'cmdId', u'params', u'assocdeviceslist', u'devicetype', u'rsp', u'devicestate']
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 97, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 174, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^Z
+[6]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+====================================================================
+MESSAGE INCOMING
+Sync Message Received  {'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+End of message incoming
+
+====================================================================
+Resetting:
+Async Message Send | Type:  4 - AREQ
+  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+End of message incoming
+====================================================================
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+End of message incoming
+====================================================================
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+End of message incoming
+====================================================================
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+End of message incoming
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+====================================================================
+MESSAGE INCOMING
+Sync Message Received  {'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+End of message incoming
+====================================================================
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+End of message incoming
+====================================================================
+^Z
+[7]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE INCOMING
+Sync Message Received  {'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE INCOMING
+Sync Message Received  {'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+
+====================================================================
+MESSAGE INCOMING
+Async Message Received  {'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+
+^Z
+[8]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+
+^Z
+[9]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'AF', 'length': 26, 'type': u'AREQ', 'id': u'incomingMsg'}
+====================================================================
+
+^Z
+[10]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^Z
+[11]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+$nK	S??Z?<?
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+	
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+??
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+??
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^[[A^C
+Stopping asynchronous message processing thread!
+^[[AStopping incoming monitoring thread!
+Main thread terminating
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+02:03:04:02:06:02
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+09
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+00
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+00:00:00
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^Z
+[12]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 87, in monitor_incoming
+    print(line)
+UnboundLocalError: local variable 'line' referenced before assignment
+
+^Z
+[13]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+02:03:04:02:06:02
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+09
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+00
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+00:00:00
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^Z
+[14]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:01:65:36:00
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^Z
+[15]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  ?g$nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Agora organizado: 
+[u'params', u'cmdId', u'type', u'req', u'rsp', u'status', u'ieeeaddr', u'shortaddr', u'devicetype', u'devicestate', u'numassocdevices', u'assocdeviceslist']
+[u'status', u'shortaddr', u'numassocdevices', u'type', u'req', u'ieeeaddr', u'cmdId', u'params', u'assocdeviceslist', u'devicetype', u'rsp', u'devicestate']
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 187, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^[[A^Z
+[16]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  ?g$nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Agora organizado: 
+[u'params', u'cmdId', u'type', u'req', u'rsp', u'status', u'ieeeaddr', u'shortaddr', u'devicetype', u'devicestate', u'numassocdevices', u'assocdeviceslist']
+[u'status', u'shortaddr', u'numassocdevices', u'type', u'req', u'ieeeaddr', u'cmdId', u'params', u'assocdeviceslist', u'devicetype', u'rsp', u'devicestate']
+CHEGUEI!!
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 187, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^[[A^Z
+[17]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:01:65:36:00
+{'subsystem': u'ZDO', 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^Z
+[18]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  ?g$nK	S??Z?<?
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 176, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^Z
+[19]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 157
+    print("Subsys: ", Subsys)
+        ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 157
+    print("Subsys: ", Subsys)
+        ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 160
+    cmdId = temp[]
+                 ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"])
+  File "serial_node_no_ross.py", line 164, in decodeData
+    return temp.keys()[temp.values().index(Type)]
+ValueError: u'getDeviceInfo' is not in list
+
+^[[A^Z
+[20]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+{u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+{u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+{u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+{u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+{u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+{u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+{u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+====================================================================
+^Z
+[21]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[22]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[23]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 101
+SyntaxError: Non-ASCII character '\xc3' in file serial_node_no_ross.py on line 101, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 101
+SyntaxError: Non-ASCII character '\xc3' in file serial_node_no_ross.py on line 101, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[24]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 102
+SyntaxError: Non-ASCII character '\xc3' in file serial_node_no_ross.py on line 102, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 102
+SyntaxError: Non-ASCII character '\xc3' in file serial_node_no_ross.py on line 102, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem
+data
+length
+type
+id
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+subsystem
+data
+length
+type
+id
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[25]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem :  UTIL
+data :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+length :  24
+type :  SRSP
+id :  getDeviceInfo
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+subsystem :  ZDO
+data :  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+length :  1
+type :  SRSP
+id :  mgmtPermitJoinReq
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[26]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem :  UTIL
+data :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+length :  24
+type :  SRSP
+id :  getDeviceInfo
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+subsystem :  ZDO
+data :  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+length :  1
+type :  SRSP
+id :  mgmtPermitJoinReq
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[27]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 105
+    if(len(frame[element] == 1):
+                               ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+OLAAAA subsystem :  UTIL
+OLAAAA data :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 105, in monitor_incoming
+    if(len(frame[element]) == 1):
+TypeError: object of type 'int' has no len()
+
+^Z
+[28]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 105, in monitor_incoming
+    if(type(tmpDict[frame[element]])==list):
+NameError: global name 'tmpDict' is not defined
+
+^Z
+[29]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 105, in monitor_incoming
+    if isinstance(tmpDict[frame[element]], (list,)):
+NameError: global name 'tmpDict' is not defined
+
+^Z
+[30]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem :  UTIL
+data :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+length :  24
+type :  SRSP
+id :  getDeviceInfo
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+subsystem :  ZDO
+data :  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+length :  1
+type :  SRSP
+id :  mgmtPermitJoinReq
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+Data:  fe:1a:44:81:00:00:00:05:c1:5a:01:01:00:60:00:c1:fb:02:00:00:09:19:bb:00:35:00:00:ff:00:00
+Subsys:  AF
+Type:  incomingMsg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:1a:44:81:00:00:00:05:c1:5a:01:01:00:60:00:c1:fb:02:00:00:09:19:bb:00:35:00:00:ff:00:00
+{'subsystem': u'AF', 'data': {u'params': {u'req': [{u'groupid': 1}, {u'clusterid': 1}, {u'srcaddr': 1}, {u'srcendpoint': 0}, {u'dstendpoint': 0}, {u'wasbroadcast': 0}, {u'linkquality': 0}, {u'securityuse': 0}, {u'timestamp': 2}, {u'transseqnumber': 0}, {u'len': 7}, {u'data': 11}]}, u'cmdId': 129, u'type': 2}, 'length': 26, 'type': u'AREQ', 'id': u'incomingMsg'}
+Data:  {u'params': {u'req': [{u'groupid': 1}, {u'clusterid': 1}, {u'srcaddr': 1}, {u'srcendpoint': 0}, {u'dstendpoint': 0}, {u'wasbroadcast': 0}, {u'linkquality': 0}, {u'securityuse': 0}, {u'timestamp': 2}, {u'transseqnumber': 0}, {u'len': 7}, {u'data': 11}]}, u'cmdId': 129, u'type': 2}
+====================================================================
+^Z
+[31]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 106, in monitor_incoming
+    print(element,": ", frame[element])
+KeyError: u'U'
+
+^Z
+[32]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+U :  UTIL
+T :  UTIL
+I :  UTIL
+L :  UTIL
+params :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+cmdId :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+type :  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 105, in monitor_incoming
+    for element2 in frame[element]:
+TypeError: 'int' object is not iterable
+
+^Z
+[33]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 106, in monitor_incoming
+    print(element2,": ", frame[element2])
+KeyError: u'U'
+
+^Z
+[34]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 106, in monitor_incoming
+    print(element2,": ", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[35]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 105, in monitor_incoming
+    print(element,": ", frame[element[element]])
+TypeError: string indices must be integers, not str
+
+^Z
+[36]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 105, in monitor_incoming
+    print(element,": ", frame[element[element]])
+TypeError: string indices must be integers, not str
+
+^Z
+[37]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem :  UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(element2,": ", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[38]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem :  UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(element2,"- ", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[39]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem -  UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(element2,"- ", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[40]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(element2,"- ", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[41]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+data - {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+length - 24
+type - SRSP
+id - getDeviceInfo
+Data:  {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+subsystem - ZDO
+data - {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+length - 1
+type - SRSP
+id - mgmtPermitJoinReq
+Data:  {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[42]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 105
+    if (element == "data")
+                         ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 108
+    else
+       ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(element2,"-", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[43]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+LISTA data - {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}
+length - 24
+type - SRSP
+id - getDeviceInfo
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:06:41:80:02:03:04:02:06:02
+{'subsystem': u'SYS', 'data': {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}, 'length': 6, 'type': u'AREQ', 'id': u'resetInd'}
+Data:  {u'params': {u'req': [{u'reason': 0}, {u'transportrev': 0}, {u'productid': 0}, {u'majorrel': 0}, {u'minorrel': 0}, {u'hwrev': 0}]}, u'cmdId': 128, u'type': 2}
+====================================================================
+Data:  fe:01:45:c0:09
+Subsys:  ZDO
+Type:  stateChangeInd
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:01:45:c0:09
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}, 'length': 1, 'type': u'AREQ', 'id': u'stateChangeInd'}
+Data:  {u'params': {u'req': [{u'state': 20}]}, u'cmdId': 192, u'type': 2}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+Data:  fe:04:09:00:02:83:f1:b6
+Subsys:  APP
+Type:  msg
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:04:09:00:02:83:f1:b6
+{'subsystem': u'APP', 'data': {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}, 'length': 4, 'type': u'POLL', 'id': u'msg'}
+Data:  {u'params': {u'req': [{u'appendpoint': 0}, {u'destaddress': 1}, {u'destendpoint': 0}, {u'clusterid': 1}, {u'msglen': 0}, {u'message': 11}], u'rsp': [{u'status': 0}]}, u'cmdId': 0, u'type': 1}
+====================================================================
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+Data:  fe:01:65:36:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinReq
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:01:65:36:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}, 'length': 1, 'type': u'SRSP', 'id': u'mgmtPermitJoinReq'}
+subsystem - ZDO
+LISTA data - {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 1}, {u'duration': 0}, {u'tcsignificance': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 54, u'type': 1}
+length - 1
+type - SRSP
+id - mgmtPermitJoinReq
+====================================================================
+Data:  fe:03:45:b6:00:00:00
+Subsys:  ZDO
+Type:  mgmtPermitJoinRsp
+
+====================================================================
+MESSAGE RECEIVED (Async Message)
+fe:03:45:b6:00:00:00
+{'subsystem': u'ZDO', 'data': {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}, 'length': 3, 'type': u'AREQ', 'id': u'mgmtPermitJoinRsp'}
+Data:  {u'params': {u'req': [{u'srcaddr': 1}, {u'status': 0}]}, u'cmdId': 182, u'type': 2}
+====================================================================
+^Z
+[44]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(element2,"-", frame[element[element2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[45]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(x2,"-", frame[x[x2]])
+TypeError: string indices must be integers, not unicode
+
+^Z
+[46]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(x2,"-", frame[x2])
+KeyError: u'params'
+
+^Z
+[47]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'srngGen': {u'params': {u'req': [], u'rsp': [{u'outrng': 19}]}, u'cmdId': 76, u'type': 1}, u'gpioSetDirection': {u'params': {u'req': [{u'port': 0}, {u'bit': 0}, {u'direction': 0}], u'rsp': [{u'oldp0dir': 0}, {u'oldp1dir': 0}, {u'oldp2dir': 0}, {u'p0dir': 0}, {u'p1dir': 0}, {u'p2dir': 0}]}, u'cmdId': 20, u'type': 1}, u'srcMatchEnable': {u'params': {u'req': [], u'rsp': [{u'status': 0}]}, u'cmdId': 32, u'type': 1}, u'zclKeyEstablishInd': {u'params': {u'req': [{u'taskid': 0}, {u'event': 0}, {u'status': 0}, {u'waittime': 0}, {u'suite': 1}]}, u'cmdId': 225, u'type': 2}, u'zclKeyEstInitEst': {u'params': {u'req': [{u'taskid': 0}, {u'seqnum': 0}, {u'endpoint': 0}, {u'addrmode': 0}, {u'extaddr': 3}], u'rsp': [{u'status': 0}]}, u'cmdId': 128, u'type': 1}, u'setPanid': {u'params': {u'req': [{u'panid': 1}], u'rsp': [{u'status': 0}]}, u'cmdId': 2, u'type': 1}, u'assocCount': {u'params': {u'req': [{u'startrelation': 0}, {u'endrelation': 0}], u'rsp': [{u'count': 1}]}, u'cmdId': 72, u'type': 1}, u'getDeviceInfo': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, u'addrmgrExtAddrLookup': {u'params': {u'req': [{u'extaddr': 3}], u'rsp': [{u'nwkaddr': 1}]}, u'cmdId': 64, u'type': 1}, u'timeAlive': {u'params': {u'req': [], u'rsp': [{u'seconds': 2}]}, u'cmdId': 9, u'type': 1}, u'ledControl': {u'params': {u'req': [{u'ledid': 0}, {u'mode': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 10, u'type': 1}, u'gpioRead': {u'params': {u'req': [], u'rsp': [{u'p0': 0}, {u'p1': 0}, {u'p2': 0}, {u'p0dir': 0}, {u'p1dir': 0}, {u'p2dir': 0}]}, u'cmdId': 21, u'type': 1}, u'srcMatchAckAllPending': {u'params': {u'req': [{u'option': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 36, u'type': 1}, u'getNvInfo': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'scanchannels': 21}, {u'panid': 1}, {u'securitylevel': 0}, {u'preconfigkey': 15}]}, u'cmdId': 1, u'type': 1}, u'callbackSubCmd': {u'params': {u'req': [{u'subsystemid': 1}, {u'action': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 6, u'type': 1}, u'apsmeLinkKeyDataGet': {u'params': {u'req': [{u'extaddr': 3}], u'rsp': [{u'status': 0}, {u'seckey': 15}, {u'txfrmcntr': 2}, {u'rxfrmcntr': 2}]}, u'cmdId': 68, u'type': 1}, u'zclKeyEstSign': {u'params': {u'req': [{u'inputlen': 0}, {u'input': 11}], u'rsp': [{u'status': 0}, {u'key': 18}]}, u'cmdId': 129, u'type': 1}, u'srcMatchCheckAllPending': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'value': 0}]}, u'cmdId': 37, u'type': 1}, u'keyEvent': {u'params': {u'req': [{u'keys': 0}, {u'shift': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 7, u'type': 1}, u'gpioWrite': {u'params': {u'req': [{u'port': 0}, {u'bit': 0}, {u'value': 0}], u'rsp': [{u'oldp0': 0}, {u'oldp1': 0}, {u'oldp2': 0}, {u'p0': 0}, {u'p1': 0}, {u'p2': 0}, {u'p0dir': 0}, {u'p1dir': 0}, {u'p2dir': 0}]}, u'cmdId': 22, u'type': 1}, u'syncReq': {u'params': {u'req': []}, u'cmdId': 224, u'type': 2}, u'apsmeLinkKeyNvIdGet': {u'params': {u'req': [{u'extaddr': 3}], u'rsp': [{u'status': 0}, {u'linkkeynvid': 1}]}, u'cmdId': 69, u'type': 1}, u'testLoopback': {u'params': {u'req': [{u'data': 13}], u'rsp': [{u'data': 13}]}, u'cmdId': 16, u'type': 1}, u'setPrecfgkey': {u'params': {u'req': [{u'preconfigkey': 13}], u'rsp': [{u'status': 0}]}, u'cmdId': 5, u'type': 1}, u'assocGetWithAddress': {u'params': {u'req': [{u'extaddr': 3}, {u'nwkaddr': 1}], u'rsp': [{u'device': 16}]}, u'cmdId': 74, u'type': 1}, u'srcMatchCheckSrcAddr': {u'params': {u'req': [{u'addressmode': 0}, {u'address': 3}, {u'panid': 1}], u'rsp': [{u'status': 0}]}, u'cmdId': 35, u'type': 1}, u'srcMatchDelEntry': {u'params': {u'req': [{u'addressmode': 0}, {u'address': 3}, {u'panid': 1}], u'rsp': [{u'status': 0}]}, u'cmdId': 34, u'type': 1}, u'setSeclevel': {u'params': {u'req': [{u'securitylevel': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 4, u'type': 1}, u'apsmeRequestKeyCmd': {u'params': {u'req': [{u'partneraddr': 3}], u'rsp': [{u'status': 0}]}, u'cmdId': 75, u'type': 1}, u'assocFindDevice': {u'params': {u'req': [{u'number': 0}], u'rsp': [{u'device': 16}]}, u'cmdId': 73, u'type': 1}, u'bindAddEntry': {u'params': {u'req': [{u'addrmode': 0}, {u'dstaddr': 3}, {u'dstendpoint': 0}, {u'numclusterids': 0}, {u'clusterids': 12}], u'rsp': [{u'srcep': 0}, {u'dstgroupmode': 0}, {u'dstidx': 1}, {u'dstep': 0}, {u'numclusterids': 0}, {u'clusterids': 14}]}, u'cmdId': 77, u'type': 1}, u'setChannels': {u'params': {u'req': [{u'channels': 2}], u'rsp': [{u'status': 0}]}, u'cmdId': 3, u'type': 1}, u'srcMatchAddEntry': {u'params': {u'req': [{u'addressmode': 0}, {u'address': 3}, {u'panid': 1}], u'rsp': [{u'status': 0}]}, u'cmdId': 33, u'type': 1}, u'dataReq': {u'params': {u'req': [{u'securityuse': 0}], u'rsp': [{u'status': 0}]}, u'cmdId': 17, u'type': 1}, u'addrmgrNwkAddrLookup': {u'params': {u'req': [{u'nwkaddr': 1}], u'rsp': [{u'extaddr': 3}]}, u'cmdId': 65, u'type': 1}}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(x2,"-", frame[x2])
+KeyError: u'srngGen'
+
+^Z
+[48]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': {u'params': {u'req': [], u'rsp': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]}, u'cmdId': 0, u'type': 1}, 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(x2,"-", frame[x2])
+KeyError: u'params'
+
+^Z
+[49]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}], 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 107, in monitor_incoming
+    print(x2,"-", frame[x2])
+TypeError: unhashable type: 'dict'
+
+^Z
+[50]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}], 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+data - [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]
+length - 24
+type - SRSP
+id - getDeviceInfo
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"], False)
+  File "serial_node_no_ross.py", line 173, in decodeData
+    temp = temp["rsp"]
+KeyError: 'rsp'
+
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+^Z
+[51]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 110
+    for 
+       ^
+SyntaxError: invalid syntax
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}], 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+CHEGUEI AQUI
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 108, in monitor_incoming
+    print(x2,"-", frame[x2])
+TypeError: unhashable type: 'dict'
+
+^Z
+[52]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+WELCOME
+====================================================================
+Serial connection open!
+Incoming monitoring thread running.
+Asynchronous message processing thread running
+Getting device info
+Sending synchronous command: 00:27:00
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  UTIL  | ID:  30  | Data:  00
+Data:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+Subsys:  UTIL
+Type:  getDeviceInfo
+
+====================================================================
+MESSAGE RECEIVED (Sync Message)
+Message:  fe:18:67:00:00:24:6e:ff:08:00:4b:12:00:00:00:01:09:05:53:a4:c1:5a:19:1f:f7:06:3c:b8
+{'subsystem': u'UTIL', 'data': [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}], 'length': 24, 'type': u'SRSP', 'id': u'getDeviceInfo'}
+subsystem - UTIL
+Length:  7
+data - [{u'status': 0}, {u'ieeeaddr': 3}, {u'shortaddr': 1}, {u'devicetype': 0}, {u'devicestate': 0}, {u'numassocdevices': 9}, {u'assocdeviceslist': 11}]
+length - 24
+type - SRSP
+id - getDeviceInfo
+====================================================================
+
+
+Resetting:
+Async Message Send | Type:  4 - AREQ  | Subsystem:  SYS  | ID:  30  | Data:  00:00
+Data:  fe:06:41:80:02:03:04:02:06:02
+Subsys:  SYS
+Type:  resetInd
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "serial_node_no_ross.py", line 96, in monitor_incoming
+    frame["data"] = decodeData(line, frame["subsystem"], frame["id"], False)
+  File "serial_node_no_ross.py", line 173, in decodeData
+    temp = temp["rsp"]
+KeyError: 'rsp'
+
+
+
+ACTIVATING joining:
+Sync Message Send | Type:  2 - SREQ  | Subsystem:  ZDO  | ID:  36  | Data:  36:00:00:ff:ff
+
+^Z
+[53]+  Stopped                 python serial_node_no_ross.py
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ python serial_node_no_ross.py
+  File "serial_node_no_ross.py", line 107
+    print("Length: ", len(frame[x]))
+        ^
+IndentationError: expected an indented block
+MacBook-Pro-de-Joao-4:Ligação aos Sensores joaobento$ 
+
+
+
+
+
+
